@@ -13,7 +13,7 @@ class NewsController extends Controller
     public function index()
     {
         $data['newss'] = News::all();
-        $data['title'] = 'عرض الاخبار';
+        $data['title'] = 'عرض الأخبار';
         return view('admin.control_panel.news.show_news',$data);
     }
     public function create()

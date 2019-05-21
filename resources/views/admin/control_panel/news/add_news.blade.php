@@ -49,19 +49,20 @@
                                                 />
                                             </div>
                                         </div>
-                                         <div class="form-group">
-                                            <label class="col-lg-3 control-label">وصف الخبر</label>
-                                            <div class="col-lg-6">
-                                                <input type="text" class="form-control" name="description"
-                                                       data-bv-message="The username is not valid"
-                                                       required data-bv-notempty-message="The username is required and cannot be empty"
-                                                       value="{{ old('description')}}"
-                                                       data-bv-stringlength="true" data-bv-stringlength-min="6" data-bv-stringlength-max="30" data-bv-stringlength-message="The username must be more than 6 and less than 30 characters long"
-                                                       data-bv-different="true" data-bv-different-field="password" data-bv-different-message="The username and password cannot be the same as each other"
-
-                                                />
-                                            </div>
+                                        <label class="col-lg-3 control-label">وصف الخبر</label><br>
+                                        <div class="panel-heading">
+                                           
+                                            <ul class="panel-control">
+                                                <li><a class="minus" href="javascript:void(0)"><i class="fa fa-minus"></i></a></li>
+                                                <li><a class="refresh" href="javascript:void(0)"><i class="fa fa-refresh"></i></a></li>
+                                                <li><a class="close-panel" href="javascript:void(0)"><i class="fa fa-times"></i></a></li>
+                                            </ul>
                                         </div>
+                                        <div class="panel-body no-padding" >
+                                            <textarea class="summernote" name="description" id="demo" >
+                                             
+                                            </textarea>
+                                        </div><br>
 
                                         <div class="row ls_divider last">
                                             <div class="form-group">

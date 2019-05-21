@@ -72,8 +72,7 @@ class UserController extends Controller
             if($request->password  == $user->password){
                 $newPassword = false ;
             }
-                $rules = $this->EditformValidation($id);
-                $this->validate($request, $rules);
+               
                 $user->fill($request->all());
 
             if($newPassword){
@@ -116,7 +115,7 @@ class UserController extends Controller
     {
        return array(
         'name'     => 'regex:/^[\pL\s\d\-]+$/u|required|max:99',
-        'email'    => 'max:99|email|unique:users,email,deleted_at',
+        'email'    => 'required|email|unique:users,email,NULL,id,deleted_at,NULL',
         'password'              => 'required | confirmed ',
         'password_confirmation' => 'required ',
         'img'=> 'image',

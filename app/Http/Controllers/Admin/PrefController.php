@@ -37,7 +37,7 @@ class PrefController extends Controller
     }
     public  function logout(Request $request){
         $request->session()->forget(['id', 'role']);
-        $request->session()->flush();
+        // $request->session()->flush();
         $title='تسجيل الدخول';
         return view('admin.login')->with(compact('title'));
     }

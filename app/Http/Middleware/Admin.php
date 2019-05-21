@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 use App\User;
 use Closure;
 
-class Admin
+class   Admin
 {
     /**
      * Handle an incoming request.
@@ -27,7 +27,7 @@ class Admin
          return redirect()->route('blog.index');
          
          
-            //return view('control_panel.login');//redirect()->route('calender');
+          
        
     }
 }

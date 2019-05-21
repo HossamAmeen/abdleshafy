@@ -19,13 +19,13 @@
                         <!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
                         <!--                        first slide-->
                         <li data-transition="random-premium" data-slotamount="7">
-                            <img src="{{asset('resources/assets/web/images/head-first.png')}}"
+                            <img src="{{asset('resources/assets/web/images/slide.jpg')}}"
                                  data-bgrepeat="no-repeat"
                                  data-bgfit="cover"
                                  data-bgposition="center center"
                             >
 
-                            <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
+                            {{-- <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
                                  data-x="0"
                                  data-y="210"
                                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
@@ -35,19 +35,19 @@
                                  data-elementdelay="0.1"
                                  data-endelementdelay="0.1"
                                  data-endspeed="1000"
-                                 style="z-index: 8;"><img src="{{asset('resources/assets/web/images/typo.png')}}" alt="" >
-                            </div>
+                                 style="z-index: 8;"><img src="{{asset('resources/assets/web/images/slide.jpg')}}" alt="" >
+                            </div> --}}
 
                         </li>
 
                         <!--                        second slide-->
                         <li data-transition="random-premium" data-slotamount="7">
-                            <img src="{{asset('resources/assets/web/images/Untitled-3.png')}}"
+                            <img src="{{asset('resources/assets/web/images/slide.jpg')}}"
                                  data-bgrepeat="no-repeat"
                                  data-bgfit="cover"
                                  data-bgposition="center center">
 
-                            <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
+                            {{-- <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
                                  data-x="right"
                                  data-y="100"
                                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
@@ -58,9 +58,9 @@
                                  data-endelementdelay="0.1"
                                  data-endspeed="1000"
                                  style="z-index: 8;"><img src="{{asset('resources/assets/web/images/Untitled-4.png')}}" alt="" >
-                            </div>
+                            </div> --}}
 
-                            <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
+                            {{-- <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
                                  data-x="700"
                                  data-y="100"
                                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
@@ -97,17 +97,17 @@
                                  data-endelementdelay="0.1"
                                  data-endspeed="1000"
                                  style="z-index: 8;"><img src="{{asset('resources/assets/web/images/Untitled-7.png')}}" alt="" >
-                            </div>
+                            </div> --}}
 
                         </li>
                         <!--                        third slide-->
                         <li data-transition="random-premium" data-slotamount="7">
-                            <img src="{{asset('resources/assets/web/images/video-head.png')}}"
+                            <img src="{{asset('resources/assets/web/images/slide.jpg')}}"
                                  data-bgrepeat="no-repeat"
                                  data-bgfit="cover"
                                  data-bgposition="center center">
 
-                            <div class="tp-caption sft customout"
+                            {{-- <div class="tp-caption sft customout"
                                  data-x="center"
                                  data-hoffset="134"
                                  data-y="200"
@@ -127,7 +127,7 @@
                                         style='width:640px;height:360px;'>
                                 </iframe>
 
-                            </div>
+                            </div> --}}
                         </li>
                     </ul>
                 </div>
