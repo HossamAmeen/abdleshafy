@@ -1,138 +1,63 @@
 <! DOCTYPE html>
 <html>
-@include('web._masters.header')
-@yield('header')
+{{-- 
+{{asset('resources/assets/web/ --}}
+<head>
+        <title>abdel shafy</title>
+         <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap-rtl.css')}}">
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/imagehover.min.css')}}">
+<!--        our revolution slider-->
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/settings.css')}}">
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/extralayers.css')}}">
+        
+<!--        our video popup-->
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/video.popup.css')}}">
+<!--        fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
+        
+<!--        our main style-->
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/style.css')}}">
+        
+        <style>
+            .bannercontainer {
+                width:100%;
+                position:relative;
+                padding:0;
+            }
+
+            .banner{
+                width:100%;
+                position:relative;
+            }
+        </style>
+    </head>
     <body>
         
         <!-- navbar -->
         @include('web._masters.nav')
 
         <header>
+           <!--        header-->
+      
             <!--
             #################################
                 - THEMEPUNCH BANNER -
             #################################
             -->
-            <div class="bannercontainer">
-                <div class="banner">
-                    <ul>
-                        <!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
-                        <!--                        first slide-->
-                        <li data-transition="random-premium" data-slotamount="7">
-                            <img src="{{asset('resources/assets/web/images/slide.jpg')}}"
-                                 data-bgrepeat="no-repeat"
-                                 data-bgfit="cover"
-                                 data-bgposition="center center"
-                            >
+            <div class="banner1">
 
-                            {{-- <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
-                                 data-x="0"
-                                 data-y="210"
-                                 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                 data-speed="600"
-                                 data-start="1500"
-                                 data-easing="Power3.easeInOut"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="1000"
-                                 style="z-index: 8;"><img src="{{asset('resources/assets/web/images/slide.jpg')}}" alt="" >
-                            </div> --}}
-
-                        </li>
-
-                        <!--                        second slide-->
-                        <li data-transition="random-premium" data-slotamount="7">
-                            <img src="{{asset('resources/assets/web/images/slide.jpg')}}"
-                                 data-bgrepeat="no-repeat"
-                                 data-bgfit="cover"
-                                 data-bgposition="center center">
-
-                            {{-- <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
-                                 data-x="right"
-                                 data-y="100"
-                                 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                 data-speed="600"
-                                 data-start="1000"
-                                 data-easing="Power3.easeInOut"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="1000"
-                                 style="z-index: 8;"><img src="{{asset('resources/assets/web/images/Untitled-4.png')}}" alt="" >
-                            </div> --}}
-
-                            {{-- <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
-                                 data-x="700"
-                                 data-y="100"
-                                 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                 data-speed="600"
-                                 data-start="2000"
-                                 data-easing="Power3.easeInOut"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="1000"
-                                 style="z-index: 8;"><img src="{{asset('resources/assets/web/images/Untitled-5.png')}}" alt="" >
-                            </div>
-
-                            <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
-                                 data-x="right"
-                                 data-y="350"
-                                 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                 data-speed="600"
-                                 data-start="3000"
-                                 data-easing="Power3.easeInOut"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="1000"
-                                 style="z-index: 8;"><img src="{{asset('resources/assets/web/images/Untitled-5.png')}}" alt="" >
-                            </div>
-
-                            <div class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
-                                 data-x="700"
-                                 data-y="350"
-                                 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                 data-speed="600"
-                                 data-start="4000"
-                                 data-easing="Power3.easeInOut"
-                                 data-elementdelay="0.1"
-                                 data-endelementdelay="0.1"
-                                 data-endspeed="1000"
-                                 style="z-index: 8;"><img src="{{asset('resources/assets/web/images/Untitled-7.png')}}" alt="" >
-                            </div> --}}
-
-                        </li>
-                        <!--                        third slide-->
-                        <li data-transition="random-premium" data-slotamount="7">
-                            <img src="{{asset('resources/assets/web/images/slide.jpg')}}"
-                                 data-bgrepeat="no-repeat"
-                                 data-bgfit="cover"
-                                 data-bgposition="center center">
-
-                            {{-- <div class="tp-caption sft customout"
-                                 data-x="center"
-                                 data-hoffset="134"
-                                 data-y="200"
-                                 data-voffset="-6"
-                                 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                                 data-speed="600"
-                                 data-start="1000"
-                                 data-easing="Power4.easeOut"
-                                 data-endspeed="500"
-                                 data-endeasing="Power4.easeOut"
-                                 data-autoplay="true"
-                                 data-autoplayonlyfirsttime="false"
-                                 data-nextslideatend="true"
-                            >
-                                <iframe src='https://www.youtube.com/embed/zqFg6f-9UJE' width='640' height='360'
-                                        style='width:640px;height:360px;'>
-                                </iframe>
-
-                            </div> --}}
-                        </li>
-                    </ul>
-                </div>
+                   <img src="{{asset('resources/assets/web/images/index.jpg')}}"  >
+                     
+ 
             </div>
-        </header>
+        </header> 
+      
 
         <section class="about padding-sec">
             <div class="container">
@@ -315,8 +240,29 @@
             </div>
         </section>
 
-        @include('web._masters.footer')
-        @yield('header')
+            <script src="{{asset('resources/assets/web/js/jquery-2.2.4.min.js')}}"></script>
+        <script src="{{asset('resources/assets/web/js/bootstrap.min.js')}}"></script>
+<!--        our revolution slider-->
+        <script src="{{asset('resources/assets/web/js/jquery.themepunch.tools.min.js')}}"></script>
+        
+        
+    <script src="{{asset('resources/assets/web/js/video.popup.js')}}"></script>
+        <script>
+            $("#video1, #video2, #video3, #video4").videoPopup();
+            
+            $("#video1, #video2, #video3, #video4").videoPopup({
+                  autoplay: true,
+                  showControls: true,
+                  controlsColor: null,
+                  loopVideo: false,
+                  showVideoInformations: true,
+                  width: null
+                });
+
+        </script>
+           
+    <script src="{{asset('resources/assets/web/js/script.js')}}"></script>
+        
 
     </body>
 </html>

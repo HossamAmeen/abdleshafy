@@ -70,6 +70,7 @@ class HomeController extends Controller
     public function ar_news()
     {
         $data['firstNews'] = News::find(1);
+        
         $data['newsMostWatcheds'] =   DB::table('news')
             ->latest()
             ->orderBy('user_count', 'desc')
