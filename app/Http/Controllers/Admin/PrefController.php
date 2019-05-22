@@ -86,6 +86,8 @@ class PrefController extends Controller
         }
 
         $request->session()->flash('status', 'تم التعديل بنجاح');
-        return redirect()->route('prefs.index');
+
+      //  return session()->get('status') ;
+        return redirect()->route('prefs.edit',['id' => 1]);
     }
  }

@@ -1,59 +1,6 @@
-<! DOCTYPE html>
-<html>
-    <head>
-        <title>{{$title}}</title>
-         <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        
-        
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap-rtl.css')}}">
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/font-awesome.min.css')}}">
-        
-<!--        our revolution slider-->
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/settings.css')}}">
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/extralayers.css')}}">
-        
-<!--        our video popup-->
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/video.popup.css')}}">
-<!--        fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
-        
-<!--        our main style-->
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/style.css')}}">
-        
-        <style>
-            .bannercontainer {
-                width:100%;
-                position:relative;
-                padding:0;
-            }
+@extends('web._masters.main')
 
-            .banner{
-                width:100%;
-                position:relative;
-            }
-        </style>
-    </head>
-    <body>
-        
-<!--        facebook plugin-->
-        <div id="fb-root"></div>
-        <script>
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-        <!-- navbar -->
-
-        @include('web._masters.nav')
-
+@section('content')
 <header>
            <img src="{{asset('resources/assets/web/images/general.png')}}" class="img-responsive page-head">
         </header>
@@ -116,38 +63,4 @@
         <section>
             <img src="{{asset('resources/assets/web/images/before-footer.png')}}" class="img-responsive" alt="real estate background">
         </section>
-        <footer class="">
-            <div class="footer">
-                <div class="container text-center">
-                    <div class="col-md-4">
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <img src="{{asset('resources/assets/web/images/logo.png')}}" class="img-responsive" alt="logo">
-                        <ul class="icons list-unstyled list-inline">
-
-                          <a href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <section class="copywrite">
-            <div class="container text-center">
-                <img src="{{asset('resources/assets/web/images/zedy-logo.png')}}" alt="logo" class="logo">
-                <span>powered by </span>
-                
-            </div>
-        </section>
-        
-        <script src="{{asset('resources/assets/web/js/jquery-2.2.4.min.js')}}"></script>
-        <script src="{{asset('resources/assets/web/js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('resources/assets/web/js/script.js')}}"></script>
-    </body>
-</html>
+  @endsection

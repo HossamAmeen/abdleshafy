@@ -1,12 +1,6 @@
-<! DOCTYPE html>
-<html>
-    <head>
-     @include('web._masters.header')
-    </head>
-    <body>
-       <!-- navbar -->
-       @include('web._masters.nav')
+@extends('web._masters.main')
 
+@section('content')
        <header>
             <img src="{{asset('resources/assets/web/images/general.png')}}" class="img-responsive page-head">
          </header>
@@ -75,40 +69,4 @@
                  </div>
              </div>
          </section>
-        <footer class="">
-            <div class="footer">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-4">
-                           
-                        </div>
-                        <div class="col-md-4">
-                            <img src="{{asset('resources/assets/web/images/logo.png')}}" class="img-responsive" alt="logo">
-                            <ul class="icons list-unstyled list-inline">
- 
-                                <a href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-         <section class="copywrite">
-             <div class="container text-center">
-                 <img src="{{asset('resources/assets/web/images/zedy-logo.png')}}" alt="logo" class="logo">
-                 <span>powered by </span>
-             </div>
-         </section>
-         
-         <script src="{{asset('resources/assets/web/js/jquery-2.2.4.min.js')}}"></script>
-         <script src="{{asset('resources/assets/web/js/bootstrap.min.js')}}"></script>
-         
-         <script src="{{asset('resources/assets/web/js/script.js')}}"></script>
-     </body>
- </html>
+@endsection

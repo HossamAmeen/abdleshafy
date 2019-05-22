@@ -8,16 +8,17 @@
     <section id="min-wrapper">
         <div id="main-content">
             <div class="container-fluid">
+             @if (session()->get('status') )
+                            <div class="alert alert-success">
+                                <strong>{{session()->get('status')}}</strong>
+                            </div>
+                        @endif
                 <div class="row">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">بيانات الموقع</h3>
                         </div>
-                        @if (session()->get('status') )
-                            <div class="alert alert-success">
-                                <strong>{{session()->get('status')}}</strong>
-                            </div>
-                        @endif
+                       
                         <div class="panel-body">
                             <form id="defaultForm" method="post" class="form-horizontal ls_form" action="{{url('admin/prefs/' . $id)}}"
                                     data-bv-message="This value is not valid"
