@@ -231,8 +231,8 @@
                     <div class="col-md-6 col-md-push-6"> 
                         <p class="text-center">
                             <span class="qoat"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></span>
-                            العميل ليتصور طريقه وضع النصوص بالتصاميم سواء  العميل ليتصور طريقه وضع النصوص بالتصاميم سواء
-                            العميل ليتصور طريقه وضع النصوص بالتصاميم سواء  العميل ليتصور طريقه وضع النصوص بالتصاميم سواء
+                          
+                           نسعي الي الإحسان في العقارات
                             <span class="qoat"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></span>
                         </p>
                     </div>
@@ -244,35 +244,21 @@
                <div class="container text-center">
                    <div class="row">
                        <div class="col-md-4">
-                           <div class="plinks">
-                               <h3>مشروعاتنا </h3>
-                               <ul class="list-unstyled">
-                                   @foreach($data['projects'] as $project)
-                                       <li><a href="{{$project->site}}" target="_blank">{{$project->ar_title}}</a></li>
-                                   @endforeach
-                               </ul>
-
-                           </div>
+                           
                        </div>
                        <div class="col-md-4">
                            <img src="{{asset('resources/assets/web/images/logo.png')}}" class="img-responsive" alt="logo">
                            <ul class="icons list-unstyled list-inline">
 
-                               <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                               
                                <a href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                                <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                               <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                            </ul>
                        </div>
                        <div class="col-md-4">
-                           <div class="plinks">
-                               <h3> اهم الصفحات </h3>
-                               <ul class="list-unstyled">
-                                   <li> <a href="{{url('/blog')}}">المقالات </a></li>
-                                   <li> <a href="{{url('news')}}">الاخبار</a> </li>
-                                   <li> <a href="{{url('video')}}">الفيديوهات </a></li>
-                               </ul>
-                           </div>
+                          
                        </div>
                    </div>
                </div>
@@ -280,8 +266,8 @@
        </footer>
          <section class="copywrite">
             <div class="container text-center">
-                <img src="{{asset('resources/assets/web/images/zedy-logo.png')}}" alt="logo" class="logo">
-                <span>website powered by </span>
+               <a href="http://www.z-edy.com/" target="_blank"></a> <img src="{{asset('resources/assets/web/images/zedy-logo.png')}}" alt="logo" class="logo">
+                <span>Powered by </span>
             </div>
         </section>
             <script src="{{asset('resources/assets/web/js/jquery-2.2.4.min.js')}}"></script>

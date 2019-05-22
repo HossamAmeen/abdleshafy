@@ -15,7 +15,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
-                <li><a  href="{{url('/')}}"   @if($title ==  "عبد الشافي - الصفحه الرئيسيه") class="page-scroll active" @else class="page-scroll"  @endif >الرئيسيه</a></li>
+                <li><a  href="{{url('/')}}"   @if($title ==  "عبد الشافي - الصفحه الرئيسيه") class="page-scroll active" @else class="page-scroll"  @endif >الرئيسية</a></li>
                 <li><a  href="{{url('/blog')}}" @if($title ==  "عبد الشافي - المقالات") class="page-scroll active" @else class="page-scroll"  @endif  >المقالات </a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المشروعات  <span class="caret"></span></a>

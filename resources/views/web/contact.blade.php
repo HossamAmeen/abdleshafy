@@ -99,35 +99,20 @@
                <div class="container text-center">
                    <div class="row">
                        <div class="col-md-4">
-                           <div class="plinks">
-                               <h3>مشروعاتنا </h3>
-                               <ul class="list-unstyled">
-                                   @foreach($data['projects'] as $project)
-                                       <li><a href="{{$project->site}}" target="_blank">{{$project->ar_title}}</a></li>
-                                   @endforeach
-                               </ul>
-
-                           </div>
+                           
                        </div>
                        <div class="col-md-4">
                            <img src="{{asset('resources/assets/web/images/logo.png')}}" class="img-responsive" alt="logo">
                            <ul class="icons list-unstyled list-inline">
 
-                               <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                <a href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                                <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                               <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                            </ul>
                        </div>
                        <div class="col-md-4">
-                           <div class="plinks">
-                               <h3> اهم الصفحات </h3>
-                               <ul class="list-unstyled">
-                                   <li> <a href="{{url('/blog')}}">المقالات </a></li>
-                                   <li> <a href="{{url('news')}}">الاخبار</a> </li>
-                                   <li> <a href="{{url('video')}}">الفيديوهات </a></li>
-                               </ul>
-                           </div>
+                           
                        </div>
                    </div>
                </div>
@@ -136,7 +121,7 @@
         <section class="copywrite">
             <div class="container text-center">
                 <img src="{{asset('resources/assets/web/images/zedy-logo.png')}}" alt="logo" class="logo">
-                <span>mahmoud abdle-shafy website powered by </span>
+                <span>powered by </span>
             </div>
         </section>
         
