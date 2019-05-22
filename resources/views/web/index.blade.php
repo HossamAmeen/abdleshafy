@@ -281,7 +281,7 @@
          <section class="copywrite">
             <div class="container text-center">
                 <img src="{{asset('resources/assets/web/images/zedy-logo.png')}}" alt="logo" class="logo">
-                <span>mahmoud abdle-shafy website powered by </span>
+                <span>website powered by </span>
             </div>
         </section>
             <script src="{{asset('resources/assets/web/js/jquery-2.2.4.min.js')}}"></script>
