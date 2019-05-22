@@ -54,7 +54,7 @@ class HomeController extends Controller
     }
     public function show_blog($id)
     {
-        $blog = Blog::find($id);
+        $blog = Blog::orderBy('id', 'desc')->first();
         $blogsMostWatcheds =   DB::table('blogs')
             ->latest()
             ->orderBy('user_count', 'desc')
@@ -69,15 +69,15 @@ class HomeController extends Controller
     }
     public function ar_news()
     {
-        $data['firstNews'] = News::find(1);
+        $data['firstNews'] = News::orderBy('id', 'desc')->first(); // News::find(1);
         
         $data['newsMostWatcheds'] =   DB::table('news')
             ->latest()
             ->orderBy('user_count', 'desc')
             ->limit(4)
             ->get();
-
-        $data['newss'] = News::paginate(4);
+          
+        $data['newss'] =    News::orderBy('id', 'desc')->where('id','!=',$data['firstNews']->id)->paginate(4); //  DB::table('news')->orderBy('id', 'desc')->paginate(4); // News::paginate(4);
         $data['title'] = "عبد الشافي -  الأخبار";
         return view('web.news',$data);
     }

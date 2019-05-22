@@ -35,12 +35,12 @@
                          <div class="row main">
                              <div class="col-md-6">
                                  <div class="img-sec">
-                                     <a href="{{ url('show_news/'.$firstNews->id) }}"><img src="{{$firstNews->img}}" class="img-responsive"></a>
+                                     <a href="{{ url('news/'.$firstNews->id) }}"><img src="{{$firstNews->img}}" class="img-responsive"></a>
                                  </div>
                              </div>
                              <div class="col-md-6">
                                  <div class="content">
-                           <h2> <a href="{{ url('show_news/'.$firstNews->id) }}">{{$firstNews->ar_title}}</a></h2>
+                           <h2> <a href="{{ url('news/'.$firstNews->id) }}">{{$firstNews->ar_title}}</a></h2>
                                      <p class="desc">{{$firstNews->description}}</p>
                                  </div>
                              </div>
@@ -49,9 +49,9 @@
                             @foreach($newss as $news)
                                 <div class="col-md-6">
                                     <div class="item">
-                                        <a href="{{ url('show_news'.$news->id) }}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
+                                        <a href="{{ url('news'.$news->id) }}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
                                         <div class="content">
-                                <h2><a href="{{ url('show_news'.$news->id) }}">{{ $news->ar_title }}</a></h2>
+                                <h2><a href="{{ url('news'.$news->id) }}">{{ $news->ar_title }}</a></h2>
                                         </div>
                                     </div>
                                 </div>

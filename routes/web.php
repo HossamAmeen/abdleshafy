@@ -7,8 +7,8 @@
     Route::get('/project', 'HomeController@ar_project');
     Route::get('/blog', 'HomeController@ar_blog');
     Route::get('/news', 'HomeController@ar_news');
-    Route::get('/show_blog/{id}', 'HomeController@show_blog');
-    Route::get('/show_news/{id}', 'HomeController@show_news');
+    Route::get('/blog/{id}', 'HomeController@show_blog');
+    Route::get('/news/{id}', 'HomeController@show_news');
     Route::get('/video', 'HomeController@video');
     Route::any('/contact', 'HomeController@contact');
 

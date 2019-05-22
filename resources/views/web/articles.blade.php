@@ -18,7 +18,7 @@
                                         <img src="{{asset($blogsMostWatched->img)}}" class="img-responsive" alt="article">
                                     </div>
                                     <div class="col-md-7 col-sm-6">
-                                        <p class="description"><a href="{{url('show_blog/'.$blogsMostWatched->id)}}">{{$blogsMostWatched->ar_title}}</a></p>
+                                        <p class="description"><a href="{{url('blog/'.$blogsMostWatched->id)}}">{{$blogsMostWatched->ar_title}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                         <img src="{{asset($blog->img)}}" class="img-responsive">
                                     </a>
                                     <div class="content">
-                                        <a href="{{url('show_blog/'.$blog->id)}}"><h3>{{$blog->ar_title}}</h3></a>
+                                        <a href="{{url('blog/'.$blog->id)}}"><h3>{{$blog->ar_title}}</h3></a>
                                         <div class="details">
                                             <span class="author">{{$blog->owner}}</span>
                                             <span class="date">{{$blog->date}}</span>

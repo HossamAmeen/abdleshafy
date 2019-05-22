@@ -142,11 +142,11 @@
                     @foreach( $blogs as $blog)
                     <div class="col-sm-4  col-xs-8 col-xs-offset-2 col-sm-offset-0">
                         <div class="item">
-                            <a href="{{url('show_blog/'.$blog->id)}}"><img src="{{$blog->img}}" class="img-responsive" alt="article"></a>
+                            <a href="{{url('blog/'.$blog->id)}}"><img src="{{$blog->img}}" class="img-responsive" alt="article"></a>
                             <div class="content">
 
 
-                                <h3 class="title"><a href="{{url('show_blog/'.$blog->id)}}">{{$blog->ar_title}}</a></h3>
+                                <h3 class="title"><a href="{{url('blog/'.$blog->id)}}">{{$blog->ar_title}}</a></h3>
                                 <p class="abbrav">  <?php echo substr( $blog->description , 0 , 240 ) ?>  </p>
                             </div>
                         </div>
@@ -167,9 +167,9 @@
                     @foreach($newss as $news)
                     <div class="col-sm-4  col-xs-8 col-xs-offset-2 col-sm-offset-0">
                         <div class="item">
-                            <a href="{{url('show_news/'.$blog->id)}}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
+                            <a href="{{url('news/'.$news->id)}}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
                             <div class="content">
-                                <h3 class="title"><a href="{{url('show_news/'.$blog->id)}}">{{$news->ar_title}} </a></h3>
+                                <h3 class="title"><a href="{{url('news/'.$news->id)}}">{{$news->ar_title}} </a></h3>
                                 <p class="abbrav">  <?php echo substr( $news->description , 0 , 240 ) ?>  </p>
                             </div>
                         </div>
