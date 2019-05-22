@@ -84,19 +84,14 @@ $factory->define(App\Pref::class , function (Faker $faker){
    
 
     return[
-        'arAddress'     =>'arAddress',
-        'enAddress'     =>'enAddress',
-        'enDescription' =>'enDescription',
-        'arDescription' =>'arDescription',
+        'name'     =>'الموقع الرسمي للمطور العقاري محمود عبدالشافي',
+        'description' =>'description',
         'phone'         =>'01079979798',
-        'arMainAddress' =>'arMainAddress',
-        'enMainAddress' =>'enMainAddress',
-        'enMainAddress' =>'enMainAddress',
-        'mainEmail'     =>'contact@example.com',
+        'email'     =>'contact@example.com',
         'facebook'      =>'https://www.facebook.com/',
         'twitter'       =>'https://www.twitter.com/',
-        'instgram'      =>'https://www.instgram.com/',
-        'linkedin'      =>'https://www.linkedin.com/',
+        'instagram'      =>'https://www.instagram.com/',
+        'youtube'      =>'https://www.youtube.com/',
 
     ];
 });

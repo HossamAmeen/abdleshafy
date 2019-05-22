@@ -1,29 +1,34 @@
+@extends('web._masters.main')
+
+@section('content')
 <! DOCTYPE html>
 <html>
-{{-- 
+{{--
 {{asset('resources/assets/web/ --}}
 <head>
         <title>abdel shafy</title>
          <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        
-        <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap.min.css')}}">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap-rtl.css')}}">
         <link rel="stylesheet" href="{{asset('resources/assets/web/css/font-awesome.min.css')}}">
         <link rel="stylesheet" href="{{asset('resources/assets/web/css/imagehover.min.css')}}">
 <!--        our revolution slider-->
         <link rel="stylesheet" href="{{asset('resources/assets/web/css/settings.css')}}">
         <link rel="stylesheet" href="{{asset('resources/assets/web/css/extralayers.css')}}">
-        
+
 <!--        our video popup-->
         <link rel="stylesheet" href="{{asset('resources/assets/web/css/video.popup.css')}}">
 <!--        fonts-->
         <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
-        
+
 <!--        our main style-->
         <link rel="stylesheet" href="{{asset('resources/assets/web/css/style.css')}}">
-        
+
         <style>
             .bannercontainer {
                 width:100%;
@@ -38,7 +43,7 @@
         </style>
     </head>
     <body>
-        
+
         <!-- navbar -->
         @include('web._masters.nav')
 
@@ -155,9 +160,9 @@
                 <div class="row item">
                     <div class="col-md-4">
                         <div class="title">
-                            <h2>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل </h2>
+                            <h2>بالفيديو فكرة مبادرة بيتك بأيدك لتوفير الشقق بسعر التكلفة</h2>
                             <div class="text-center">
-                                <a src="#" class="btn" >
+                                <a href="{{$data['pref']->youtube}}" class="btn" >
                                     <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                     <span class="icon-work">شاهد الفيديوهات </span>
                                 </a>
@@ -165,12 +170,8 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <div class="video">
-                            <img src="{{asset('resources/assets/web/images/video1.PNG')}}" class="img-responsive" alt="video-img">
-                            <div class="icon">
-                                <a class="symbol"><i class="fa fa-3x fa-youtube-play" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zqFg6f-9UJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                     </div>
                 </div>
             </div>
@@ -239,60 +240,5 @@
                 </div>
             </div>
         </section>
-<footer class="">
-           <div class="footer">
-               <div class="container text-center">
-                   <div class="row">
-                       <div class="col-md-4">
-                           
-                       </div>
-                       <div class="col-md-4">
-                           <img src="{{asset('resources/assets/web/images/logo.png')}}" class="img-responsive" alt="logo">
-                           <ul class="icons list-unstyled list-inline">
 
-                               
-                               <a href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->instgram}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                               <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                           </ul>
-                       </div>
-                       <div class="col-md-4">
-                          
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </footer>
-         <section class="copywrite">
-            <div class="container text-center">
-               <a href="http://www.z-edy.com/" target="_blank"></a> <img src="{{asset('resources/assets/web/images/zedy-logo.png')}}" alt="logo" class="logo">
-                <span>Powered by </span>
-            </div>
-        </section>
-            <script src="{{asset('resources/assets/web/js/jquery-2.2.4.min.js')}}"></script>
-        <script src="{{asset('resources/assets/web/js/bootstrap.min.js')}}"></script>
-<!--        our revolution slider-->
-        <script src="{{asset('resources/assets/web/js/jquery.themepunch.tools.min.js')}}"></script>
-        
-        
-    <script src="{{asset('resources/assets/web/js/video.popup.js')}}"></script>
-        <script>
-            $("#video1, #video2, #video3, #video4").videoPopup();
-            
-            $("#video1, #video2, #video3, #video4").videoPopup({
-                  autoplay: true,
-                  showControls: true,
-                  controlsColor: null,
-                  loopVideo: false,
-                  showVideoInformations: true,
-                  width: null
-                });
-
-        </script>
-           
-    <script src="{{asset('resources/assets/web/js/script.js')}}"></script>
-        
-
-    </body>
-</html>
+    @ends

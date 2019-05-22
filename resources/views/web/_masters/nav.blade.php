@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{URL::to('/')}}">
                 <img src="{{asset('resources/assets/web/images/logo.png')}}" alt="logo" class="logo">
             </a>
         </div>

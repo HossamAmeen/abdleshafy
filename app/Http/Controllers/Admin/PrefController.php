@@ -74,7 +74,7 @@ class PrefController extends Controller
         else
         return redirect()->route('prefs.index');
     }
-    public function update(Request $request, $id)
+    public function update(Request $request, $id = 1)
     {
        // return $request;
       

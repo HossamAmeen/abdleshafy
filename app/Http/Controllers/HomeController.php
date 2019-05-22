@@ -33,7 +33,7 @@ class HomeController extends Controller
             ->get();
 
 
-        $data['title'] = "عبد الشافي - الصفحه الرئيسيه";
+        $data['title'] = "الرئيسية";
         return view('web.index',$data);
     }
 
@@ -49,7 +49,7 @@ class HomeController extends Controller
 
             ->get();
 
-        $data['title'] = "عبد الشافي - المقالات";
+        $data['title'] = "مقالات";
         return view('web.articles',$data);
     }
     public function show_blog($id)
@@ -64,7 +64,7 @@ class HomeController extends Controller
         $blog->user_count += 1 ;
         $blog->save();
 
-        $title= "عبد الشافي - عرض مقال" .  $blog->ar_title;
+        $title= $blog->ar_title . " ";
         return view('web.single-article', compact('blog' , 'title' , 'blogsMostWatcheds'));
     }
     public function ar_news()

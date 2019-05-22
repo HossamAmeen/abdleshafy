@@ -19,8 +19,8 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset('resources/assets/admin/images/ios/fickle-logo-72.png')}}" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset('resources/assets/admin/images/ios/fickle-logo-114.png')}}" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!-- TODO: Add a favicon -->
-<link rel="shortcut icon" href="{{asset('resources/assets/admin/images/ico/fab.ico')}}">
+<link rel="shortcut icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
+<link rel="icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
 
 <title>{{$title}}</title>
 

@@ -16,18 +16,13 @@ class CreatePrefsTable extends Migration
         if(!Schema::hasTable('prefs')){
         Schema::create('prefs', function (Blueprint $table) {
             $table->increments('id')->nullable();
-            $table->string('arAddress')->nullable();
-            $table->string('enAddress')->nullable();
-            $table->string('enDescription')->nullable();
-            $table->string('arDescription')->nullable();
+            $table->string('name')->nullable();
+            $table->string('description')->nullable();
             $table->string('phone')->nullable();
-            $table->string('arMainAddress')->nullable();
-            $table->string('enMainAddress')->nullable();
-            $table->string('mainEmail')->nullable();
+            $table->string('email')->nullable();
             $table->string('facebook')->nullable();
             $table->string('twitter')->nullable();
-            $table->string('instgram')->nullable();
-            $table->string('linkedin')->nullable();
+            $table->string('instagram')->nullable();
             $table->string('youtube')->nullable();
             $table->string('video')->nullable();
             $table->unsignedInteger('user_id')->nullable();

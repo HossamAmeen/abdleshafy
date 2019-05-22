@@ -38,28 +38,29 @@
                                         </div>
                                     @endif
 
-                                    <div class="form-group">
-                                        <label class="col-lg-3 control-label">العنوان بالعربيه</label>
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" name="arAddress"
-                                                data-bv-message="The service is not valid"
-                                                required data-bv-notempty-message="The service is required and cannot be empty"
-                                                value="{{ $arAddress}} "
-
-                                                    />
-                                        </div>
-                                    </div>
 
                                     <div class="form-group">
-                                            <label class="col-lg-3 control-label">الوصف الاساسي بالعربيه</label>
+                                            <label class="col-lg-3 control-label">اسم الموقع</label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" name="arDescription"
-                                                    data-bv-message="The username is not valid"
-                                                    required data-bv-notempty-message="The username is required and cannot be empty"
-                                                    value="{{$arDescription}}"
+                                                <input type="text" class="form-control" name="name"
+
+                                                    required data-bv-notempty-message="اسم الموقع مطلوب"
+                                                    value="{{$name}}"
                                                         />
                                             </div>
                                     </div>
+
+                                <div class="form-group">
+                                            <label class="col-lg-3 control-label">الوصف الأساسي</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" name="description"
+                                                    data-bv-message="The username is not valid"
+                                                    required data-bv-notempty-message="The username is required and cannot be empty"
+                                                    value="{{$description}}"
+                                                        />
+                                            </div>
+                                    </div>
+
                                     <div class="form-group">
                                             <label class="col-lg-3 control-label"> الموبيل</label>
                                             <div class="col-lg-6">
@@ -72,17 +73,6 @@
                                     </div>
 
 
-                                    <div class="form-group">
-                                    <label class="col-lg-3 control-label">  الايميل الاساسي</label>
-                                    <div class="col-lg-6">
-                                        <input type="text" class="form-control" name="mainEmail"
-                                            data-bv-message="The username is not valid"
-                                            required data-bv-notempty-message="The username is required and cannot be empty"
-                                            value="{{$mainEmail}}"
-                                                />
-                                    </div>
-                                    </div>
-                                    
                                     <div class="form-group">
                                             <label class="col-lg-3 control-label">facebook account</label>
                                             <div class="col-lg-6">
@@ -102,12 +92,23 @@
                                                         />
                                             </div>
                                     </div>
+
+                                    <div class="form-group">
+                                            <label class="col-lg-3 control-label"> Instagram account</label>
+                                            <div class="col-lg-6">
+                                                <input type="url" class="form-control" name="instagram"
+
+                                                    value="{{$instagram}}"
+                                                        />
+                                            </div>
+                                    </div>
+
                                     <div class="form-group">
                                             <label class="col-lg-3 control-label"> youtube link</label>
                                             <div class="col-lg-6">
-                                                <input type="url" class="form-control" name="video"
+                                                <input type="url" class="form-control" name="youtube"
                                                    
-                                                    value="{{$video}}"
+                                                    value="{{$youtube}}"
                                                         />
                                             </div>
                                     </div>
