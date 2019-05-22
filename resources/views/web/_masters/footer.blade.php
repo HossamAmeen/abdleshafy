@@ -11,10 +11,10 @@
                     <ul class="icons list-unstyled list-inline">
 
 
-                        <a href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                        <a href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="{{$data['pref']->twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a target="_blank" href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a target="_blank" href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a target="_blank" href="{{$data['pref']->twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a target="_blank" href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </ul>
                 </div>
                 <div class="col-md-4">
