@@ -139,7 +139,7 @@
         </div>
     </div>
     <p class="copy-right big-screen hidden-xs hidden-sm">
-        <span>&#169;</span> zedy <span class="footer-year">2019</span>
+        <span>&#169;</span> mahmoud-abdelshafy.com <span class="footer-year">2019</span>
     </p>
 </section>
 
