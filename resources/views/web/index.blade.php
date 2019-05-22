@@ -135,14 +135,14 @@
 <!--        our article-->
         <section class="article padding-sec">
             <div class="container">
-                <h2 class="head-sec text-center">احدث المقالات</h2>
+                <h2 class="head-sec text-center">أحدث المقالات</h2>
                 <span class="after-head"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
                 
                 <div class="row">
                     @foreach( $blogs as $blog)
                     <div class="col-sm-4  col-xs-8 col-xs-offset-2 col-sm-offset-0">
                         <div class="item">
-                            <img src="{{$blog->img}}" class="img-responsive" alt="article">
+                            <a href="{{url('show_blog/'.$blog->id)}}"><img src="{{$blog->img}}" class="img-responsive" alt="article"></a>
                             <div class="content">
 
 
@@ -160,14 +160,14 @@
 <!--        our news-->
         <section class="news">
             <div class="container">
-                <h2 class="head-sec text-center">احدث الاخبار</h2>
+                <h2 class="head-sec text-center">أحدث الأخبار</h2>
                 <span class="after-head"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
                 
                 <div class="row">
                     @foreach($newss as $news)
                     <div class="col-sm-4  col-xs-8 col-xs-offset-2 col-sm-offset-0">
                         <div class="item">
-                            <img src="{{$news->img}}" class="img-responsive" alt="article">
+                            <a href="{{url('show_news/'.$blog->id)}}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
                             <div class="content">
                                 <h3 class="title"><a href="{{url('show_news/'.$blog->id)}}">{{$news->ar_title}} </a></h3>
                                 <p class="abbrav">  <?php echo substr( $news->description , 0 , 240 ) ?>  </p>

@@ -37,8 +37,9 @@
 					<div class="content-body">
 						<img src="{{ asset($news->img) }}" alt="" class="img-responsive">
 						<div class="info">
-							<span class="pull-right date"><i class="fa fa-calendar"></i>{{ $news->date }}</span>
+							<span class="pull-right date"><i class="fa fa-calendar"></i> {{ $news->date }}</span>
 						</div>
+                        <br/>
 						<div class="body">
 							{{ $news->description }}
 						</div>

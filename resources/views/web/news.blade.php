@@ -17,7 +17,7 @@
                                  <div class="col-md-12">
                                      <div class="row">
                                          <div class="col-md-5 col-sm-6">
-                                             <img src="{{asset($newsMostWatched->img)}}" class="img-responsive" alt="article">
+                                             <a href="{{url('show_blog/'.$newsMostWatched->id)}}"><img src="{{asset($newsMostWatched->img)}}" class="img-responsive" alt="article"></a>
                                          </div>
                                          <div class="col-md-7 col-sm-6">
                                              <p class="description"><a href="{{url('show_blog/'.$newsMostWatched->id)}}">{{$newsMostWatched->ar_title}}</a></p>
@@ -35,7 +35,7 @@
                          <div class="row main">
                              <div class="col-md-6">
                                  <div class="img-sec">
-                                     <img src="{{$firstNews->img}}" class="img-responsive">
+                                     <a href="{{ url('show_news/'.$firstNews->id) }}"><img src="{{$firstNews->img}}" class="img-responsive"></a>
                                  </div>
                              </div>
                              <div class="col-md-6">
@@ -49,7 +49,7 @@
                             @foreach($newss as $news)
                                 <div class="col-md-6">
                                     <div class="item">
-                                        <img src="{{$news->img}}" class="img-responsive" alt="article">
+                                        <a href="{{ url('show_news'.$news->id) }}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
                                         <div class="content">
                                 <h2><a href="{{ url('show_news'.$news->id) }}">{{ $news->ar_title }}</a></h2>
                                         </div>

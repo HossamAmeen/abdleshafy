@@ -22,6 +22,7 @@
 <link rel="shortcut icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
 <link rel="icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
 
+
 <title>{{$title}}</title>
 
 <!--Page loading plugin Start -->

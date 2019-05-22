@@ -13,6 +13,7 @@
                     <div class="col-md-3">
                         <div class="item">
                             <div class="img-sec">
+
                                 <img src="http://img.youtube.com/vi/{{$video->img}}/mqdefault.jpg" class="img-responsive" alt="video-img">
                                 <div class="icons">
                                     <a video-url="{{$video->link}}" class="video"><span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>

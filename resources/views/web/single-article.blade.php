@@ -37,9 +37,10 @@
 					<div class="content-body">
 						<img src="{{asset($blog->img)}}" alt="" class="img-responsive">
 						<div class="info">
-							<span class="pull-right date"><i class="fa fa-calendar"></i>{{$blog->date}}</span> <br>
-							<span class="pull-left watch"><i class="fa fa-users"></i> عدد المشاهدات:{{$blog->user_count}}</span>
+							<span class="pull-right date"><i class="fa fa-calendar"></i> {{$blog->date}}</span>
+							<span class="pull-left watch"><i class="fa fa-users"></i> عد د المشاهدات:{{$blog->user_count}}</span>
 						</div>
+                        <br/>
 						<div class="body">
 							{{$blog->description}}
 						</div>
