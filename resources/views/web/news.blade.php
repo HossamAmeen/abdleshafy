@@ -49,9 +49,9 @@
                             @foreach($newss as $news)
                                 <div class="col-md-6">
                                     <div class="item">
-                                        <a href="{{ url('news'.$news->id) }}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
+                                        <a href="{{ url('news/'.$news->id) }}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
                                         <div class="content">
-                                <h2><a href="{{ url('news'.$news->id) }}">{{ $news->ar_title }}</a></h2>
+                                <h2><a href="{{ url('news/'.$news->id) }}">{{ $news->ar_title }}</a></h2>
                                         </div>
                                     </div>
                                 </div>

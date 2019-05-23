@@ -39,7 +39,7 @@ class HomeController extends Controller
 
     public function ar_blog()
     {
-        $data['blogs'] = Blog::paginate(4);
+        $data['blogs'] = Blog::orderBy('id', 'desc')->paginate(4);
 
 
         $data['blogsMostWatcheds'] =   DB::table('blogs')
@@ -98,7 +98,7 @@ class HomeController extends Controller
 
     public function video()
     {
-        $data['videos'] = Video::all();
+        $data['videos'] = Video::orderBy('id', 'desc')->get();
         $data['title'] = "عبد الشافي -  الفديوهات";
         return view('web.videos',$data);
     }
