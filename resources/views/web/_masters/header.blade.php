@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <link rel="shortcut icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
 <link rel="icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
+<meta name="author" content="https://www.facebook.com/ZedyDigitalAgency" />
+<meta name="description" content="{{$data['pref']->description}}" />
 
 
 <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap.min.css')}}">
@@ -24,9 +26,9 @@
 
 
 <meta property="og:type"   content="website" />
-<meta property="og:title"  content="????" />
+<meta property="og:title"  content="{{$title}} | {{$data['pref']->name}}" />
 <meta property="og:image"  content="{{URL::to('logo.png')}}" />
-<meta property="og:description"  content="" />
+<meta property="og:description"  content="{{$data['pref']->description}}" />
 
 <style>
     .bannercontainer {
