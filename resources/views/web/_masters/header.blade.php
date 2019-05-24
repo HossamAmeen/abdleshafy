@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <link rel="shortcut icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
 <link rel="icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
-<meta name="author" content="https://www.facebook.com/ZedyDigitalAgency" />
+<meta name="author" content="Zedy Digital Agency" />
 <meta name="description" content="{{$data['pref']->description}}" />
 
 
