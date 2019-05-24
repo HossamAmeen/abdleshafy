@@ -35,23 +35,12 @@ strong, section, li, a, button, span {
   margin-top: -10px; }
 
 .navbar-default {
-  background-color: #fff;
-      padding-bottom: 20px;
-    border-bottom: 2px dashed #cfac67;
- }
-  .banner1 img{
-    width: 100%;
-  }
-
+  background-color: transparent;
+  border-color: transparent; }
 
 .navbar-default .logo {
-    width: 67px;
-    margin-top: -17px;
-}
-.navbar-default.affix .logo {
-    width: 53px !important;
-    margin-top: -12px !important;
-}
+  width: 80px;
+  margin-top: -20px; }
 
 .navbar-default .navbar-nav > li > a {
   font-size: 21px;
@@ -60,7 +49,9 @@ strong, section, li, a, button, span {
   font-weight: bold; }
 
 .navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover, .active {
+.navbar-default .nav > li > a:focus:hover,
+.navbar-default .navbar-nav > li > a.active,
+.navbar-default.affix .navbar-nav > li > a.active {
   color: black; }
 
 .navbar-default ul {
@@ -75,7 +66,7 @@ strong, section, li, a, button, span {
     margin-top: 10px; }
 
   .navbar-default.affix .logo {
-    width: 83px;
+    width: 40px;
     margin-top: -10px; }
 
   .navbar-default.affix .nav > li > a,
@@ -96,7 +87,11 @@ strong, section, li, a, button, span {
     color: #cfac67; }
 
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #000; } }
+    color: #000; }
+
+  button.navbar-toggle {
+    float: left;
+    margin-top: 10px; } }
 /*********************************************
     -	SETTINGS FOR BANNER CONTAINERS	-
 **********************************************/
@@ -134,9 +129,6 @@ strong, section, li, a, button, span {
     font-size: 20px;
     color: #d6ab52; }
 
-.news h1 {
-	font-size: 35px;
-}
 .article, .news {
   background-color: #F2F3EE; }
   .article .item, .news .item {
@@ -154,6 +146,9 @@ strong, section, li, a, button, span {
       min-height: 200px;
       border-radius: 10px 10px 0 0; }
 
+@media (max-width: 992px) {
+  .best-watch {
+    display: none; } }
 .videos {
   background-size: cover;
   -webkit-background-size: cover;
@@ -179,6 +174,8 @@ strong, section, li, a, button, span {
         font-size: 20px;
         text-align: center;
         color: #fff; }
+        .videos .item .video .icon a {
+          color: rgba(0, 0, 0, 0.8); }
         .videos .item .video .icon .symbol:hover {
           color: red; }
     .videos .item .title h2 {
@@ -225,9 +222,7 @@ footer {
   color: #fff; }
   footer .footer img {
     margin: 0 auto;
-    max-width: 400px; 
-    height: 120px;
-  }
+    max-width: 250px; }
   footer .footer .icons {
     margin-top: 20px; }
     footer .footer .icons a {
@@ -249,27 +244,29 @@ footer {
 .page-head {
   width: 100%; }
 
-.articles-sec .article {
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
-  border: 3px solid #f7f7f7;
-  margin-bottom: 20px; }
-  .articles-sec .article img {
-    min-height: 300px; }
-  .articles-sec .article .content {
-    padding: 5px 20px; }
-  .articles-sec .article .details {
-    margin-bottom: 10px;
-    margin-top: -5px; }
-    .articles-sec .article .details .author {
-      padding-left: 50px;
-      color: #a39a9a; }
-    .articles-sec .article .details .date {
-      color: #a39a9a; }
-.articles-sec .popular {
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
-  margin-bottom: 10px; }
+.articles-sec {
+  padding-bottom: 0 !important; }
+  .articles-sec .article {
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+    border: 3px solid #f7f7f7;
+    margin-bottom: 20px; }
+    .articles-sec .article img {
+      min-height: 300px; }
+    .articles-sec .article .content {
+      padding: 5px 20px; }
+    .articles-sec .article .details {
+      margin-bottom: 10px;
+      margin-top: -5px; }
+      .articles-sec .article .details .author {
+        padding-left: 50px;
+        color: #a39a9a; }
+      .articles-sec .article .details .date {
+        color: #a39a9a; }
+  .articles-sec .popular {
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px; }
 
 .videos .item {
   margin-bottom: 20px; }
@@ -336,7 +333,7 @@ footer {
     margin-top: 10px; }
 
   .navbar-default .logo {
-    width: 90px;
+    width: 40px;
     margin-top: -16px; }
 
   .projects .icons {
@@ -370,7 +367,8 @@ footer {
       .videos-page .item .img-sec .icons a:hover .icon, .videos-page .item .img-sec .icons a:visited .icon {
         color: #f00; }
     .videos-page .item .img-sec img {
-      height: 150px; }
+      height: 150px;
+      margin: 0 auto; }
   .videos-page .item .content {
     padding: 20px 10px; }
 .videos-page .channel .btn {
@@ -404,13 +402,27 @@ footer {
     background-color: #fff; }
     .news-page .multi-post .item img {
       height: 250px; }
-    .news-page .multi-post .item .content p {
-      padding: 20px 12px;
-      font-size: 20px;
-      font-weight: 400; }
+    .news-page .multi-post .item .content {
+      padding: 20px; }
+      .news-page .multi-post .item .content p {
+        padding: 20px 12px;
+        font-size: 20px;
+        font-weight: 400; }
+
+.single-header {
+  max-height: 220px; }
+
+.single .head {
+  padding: 30px 0;
+  color: #337ab7; }
+.single .info {
+  padding: 20px 0;
+  color: #4a4646; }
+  .single .info i {
+    padding: 4px;
+    color: #27a6dc; }
+.single .body {
+  padding: 30px 0;
+  font-size: 21px; }
 
 /*# sourceMappingURL=style.css.map */
-.do img{
-
-    height: 60% !important;
-}

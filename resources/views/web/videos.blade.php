@@ -16,7 +16,9 @@
                             <div class="img-sec">
                                 <img src="http://img.youtube.com/vi/{{$video->img}}/mqdefault.jpg" class="img-responsive" alt="video-img">
                                 <div class="icons">
-                                    <a href="{{$video->link}}" onclick="changeVideo('{{$video->img}}')" video-url="https://www.youtube.com/watch?v=e80BbX05D7Y" class="video"><span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                                    <a href="{{$video->link}}" onclick="changeVideo('{{$video->img}}')" 
+                                    video-url="https://www.youtube.com/watch?v=e80BbX05D7Y" class="video">
+                                    <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
                                          <span class="play">اشتغل</span></a>
                                 </div>
                             </div>
