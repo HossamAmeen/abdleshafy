@@ -19,7 +19,7 @@
                                     <a href="#" onclick="changeVideo('{{$video->img}}')" 
                                     video-url="https://www.youtube.com/watch?v=e80BbX05D7Y" class="video">
                                     <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
-                                         <span class="play">اشتغل</span></a>
+                                         <span class="play">تشغيل</span></a>
                                 </div>
                             </div>
                         </div>
@@ -52,10 +52,12 @@
 
                 <div class="row">
                     <div class="channel text-center">
-                        <a href="{{$data['pref']->youtube}}" class="btn">
+                    @if($data['pref']->youtube != null)
+                        <a href= " {{$data['pref']->youtube}}" target="_blank" class="btn">
                             <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i> </span>
                             <span class="content">قناتنا على اليوتيوب</span>
                         </a>
+                        @endif
                     </div>
                 </div>
             </div>

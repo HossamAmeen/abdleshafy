@@ -64,7 +64,7 @@
                                                     <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                                     <span class="icon-work">فيديو </span>
                                                 </a>
-                                                <a href="{{$project->site}}" class="pull-left">
+                                                <a href="{{$project->site}}" target="_blank" class="pull-left">
                                                     <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
                                                     <span class="icon-work">الموقع </span>
                                                 </a>
@@ -91,7 +91,7 @@
                                                 <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                                 <span class="icon-work">فيديو </span>
                                             </a>
-                                            <a href="{{$project->site}}" class="pull-left">
+                                            <a href="{{$project->site}}" target="_blank"  class="pull-left">
                                                 <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
                                                 <span class="icon-work">الموقع </span>
                                             </a>

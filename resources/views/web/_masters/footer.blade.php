@@ -10,11 +10,18 @@
                     <img src="{{asset('resources/assets/web/images/logo.png')}}" class="img-responsive" alt="logo">
                     <ul class="icons list-unstyled list-inline">
 
-
-                        <a target="_blank" href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                        <a target="_blank" href="{{$data['pref']->instgram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        @if($data['pref']->youtube != null )
+                        <a target="_blank" href="{{$data['pref']->youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a> 
+                        @endif
+                         @if($data['pref']->instagram != null )
+                        <a target="_blank" href="{{$data['pref']->instagram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                       @endif
+                        @if($data['pref']->twitter != null )
                         <a target="_blank" href="{{$data['pref']->twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        @endif
+                         @if($data['pref']->facebook != null )
                         <a target="_blank" href="{{$data['pref']->facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                         @endif
                     </ul>
                 </div>
                 <div class="col-md-4">
