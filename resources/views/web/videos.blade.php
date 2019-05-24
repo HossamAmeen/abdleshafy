@@ -8,15 +8,15 @@
         
         <section class="videos-page padding-sec">
             <div class="container">    
-                
+                 <div class="row">
                  @foreach($videos as $video)
-                <div class="row">
+               
                     <div class="col-md-3">
                         <div class="item">
                             <div class="img-sec">
                                 <img src="http://img.youtube.com/vi/{{$video->img}}/mqdefault.jpg" class="img-responsive" alt="video-img">
                                 <div class="icons">
-                                    <a href="{{$video->link}}" onclick="changeVideo('{{$video->img}}')" 
+                                    <a href="#" onclick="changeVideo('{{$video->img}}')" 
                                     video-url="https://www.youtube.com/watch?v=e80BbX05D7Y" class="video">
                                     <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
                                          <span class="play">اشتغل</span></a>
@@ -24,8 +24,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+           
+
+           
                  @endforeach
+                 </div>
                 {{-- <div class="row">
                     @foreach($videos as $video)
                     <div class="col-md-3">
@@ -92,3 +95,6 @@ function changeVideo(vId){
 }
 </script>
   @endsection
+
+
+
