@@ -5,6 +5,7 @@
 <link rel="shortcut icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
 <link rel="icon" href="{{URL::to('logo.png')}}" type="image/x-icon">
 <meta name="author" content="Zedy Digital Agency" />
+<meta property="article:author" content="https://www.facebook.com/ZedyDigitalAgency" />
 <meta name="description" content="{{$data['pref']->description}}" />
 
 
