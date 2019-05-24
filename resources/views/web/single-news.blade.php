@@ -19,7 +19,7 @@
                                             <img src="{{asset($newsMostWatched->img)}}" class="img-responsive" alt="article">
                                         </div>
                                         <div class="col-md-7 col-sm-6">
-                                            <p class="description"><a href="{{url('show_blog/'.$newsMostWatched->id)}}">{{$newsMostWatched->ar_title}}</a></p>
+                                            <p class="description"><a href="{{url('news/'.$newsMostWatched->id)}}">{{$newsMostWatched->ar_title}}</a></p>
                                         </div>
                                     </div>
                                 </div>

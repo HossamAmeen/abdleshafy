@@ -17,10 +17,10 @@
                                  <div class="col-md-12">
                                      <div class="row">
                                          <div class="col-md-5 col-sm-6">
-                                             <a href="{{url('show_blog/'.$newsMostWatched->id)}}"><img src="{{asset($newsMostWatched->img)}}" class="img-responsive" alt="article"></a>
+                                             <a href="{{url('news/'.$newsMostWatched->id)}}"><img src="{{asset($newsMostWatched->img)}}" class="img-responsive" alt="article"></a>
                                          </div>
                                          <div class="col-md-7 col-sm-6">
-                                             <p class="description"><a href="{{url('show_blog/'.$newsMostWatched->id)}}">{{$newsMostWatched->ar_title}}</a></p>
+                                             <p class="description"><a href="{{url('news/'.$newsMostWatched->id)}}">{{$newsMostWatched->ar_title}}</a></p>
                                          </div>
                                      </div>
                                  </div>
