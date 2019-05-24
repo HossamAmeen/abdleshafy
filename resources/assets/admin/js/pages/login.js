@@ -35,7 +35,7 @@ function forgo_password_view(){
 //     $('#form-login').submit(function () {
 //         /*var setUrl = window.location.origin + '/index.html'
 //          window.location.assign(setUrl);*/
-//
+
 //         return false;
 //     });
 // }
@@ -47,16 +47,16 @@ function forgo_password_view(){
 //             var interval = setInterval(function () {
 //                 progress = Math.min(progress + Math.random() * 0.1, 1);
 //                 instance.setProgress(progress);
-//
+
 //                 if (progress === 1) {
 //                     instance.stop();
 //                     clearInterval(interval);
 //                     //Checking Login in here
-//
-//
+
+
 //                     var jacked = humane.create({baseCls: 'humane-jackedup', addnCls: 'humane-jackedup-success'});
 //                     jacked.log("<i class='fa fa-smile-o'></i> Successfully logedin ");
-//
+
 //                     setInterval(function () {
 //                         var setUrl = '/index.html';
 //                         window.location.assign(setUrl);
@@ -66,6 +66,3 @@ function forgo_password_view(){
 //         }
 //     });
 // }
-
-
-
