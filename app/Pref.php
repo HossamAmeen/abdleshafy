@@ -9,7 +9,7 @@ class Pref extends Model
    
     protected $fillable = [
         'name', 'description',
-        'email' , 'facebook' , 'twitter' , 'instagram' ,'youtube'
+        'email' , 'facebook' , 'twitter' , 'instagram' ,'youtube' , 'phone'
     ];
     protected $dates = ['deleted_at'];
 }

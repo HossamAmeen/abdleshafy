@@ -75,8 +75,8 @@ $factory->define(App\Video::class, function (Faker $faker) {
     return [
    
     'link'=>'https://www.youtube.com/watch?v=zqFg6f-9UJE',
-    'img' => "zqFg6f-9UJE",
-    'description'=>'شرح مبادرة بيتك بايدك شرح مبادرة بيتك بايدك شرح مبادرة بيتك بايدك',
+    
+    
         'user_id'=>$faker->randomElement($users),
 ];
 });

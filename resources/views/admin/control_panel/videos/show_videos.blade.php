@@ -34,7 +34,7 @@
                                         <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>وصف الفديو</th>
+                                            <th>رابط الفديو</th>
                                             <th>المستخدم</th>
                                             <th>الخيارات</th>
                                         </tr>
@@ -49,7 +49,7 @@
                                                 <td>
                                                     <a href="{{url('/admin/video/'.$video->id.'/edit')}}"
 
-                                                       aria-pressed="true"><?php echo substr( $video->description , 0 , 200 )?> </a>
+                                                       aria-pressed="true"><?php echo substr( $video->link , 0 , 200 )?> </a>
                                                 </td>
 
 

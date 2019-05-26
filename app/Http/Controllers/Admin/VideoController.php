@@ -95,7 +95,7 @@ class VideoController extends Controller
         return array(
             'link'     => 'required',
 
-            'description'=> 'required',
+           
         );
     }
     function EditformValidation($id)
@@ -103,14 +103,14 @@ class VideoController extends Controller
         return array(
             'link'     => 'required',
 
-            'description'=> 'required',
+          
         );
     }
     function messageValidation(){
         return array(
 
             'link.required'     =>  'هذا الحقل (الاسم) مطلوب ',
-            'description.required'     =>  'هذا الحقل (الوصف) مطلوب ',
+          
 
 
 

@@ -60,7 +60,7 @@
                                             <h2>{{$project->ar_title}} </h2>
                                             <p>{{$project->description}}</p>
                                             <div class="icons">
-                                                <a href="{{$project->video}}}" class="pull-right">
+                                                <a href="{{$project->video}}}" class="pull-right" target="_blank">
                                                     <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                                     <span class="icon-work">فيديو </span>
                                                 </a>
@@ -87,7 +87,7 @@
                                         <h2>{{$project->ar_title}} </h2>
                                         <p>{{$project->description}}</p>
                                         <div class="icons">
-                                            <a href="{{$project->video}}" class="pull-right">
+                                            <a href="{{$project->video}}" class="pull-right" target="_blank">
                                                 <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                                                 <span class="icon-work">فيديو </span>
                                             </a>

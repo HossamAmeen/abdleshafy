@@ -42,16 +42,7 @@
                                         />
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="col-lg-3 control-label">وصف الفديو</label>
-                                    <div class="col-lg-6">
-                                        <input type="text" class="form-control" name="description"
-                                               data-bv-message="The username is not valid"
-                                               required data-bv-notempty-message="The username is required and cannot be empty"
-                                               value="{{ old('description')}}"
-                                        />
-                                    </div>
-                                </div>
+                                
                                
                                 <div class="form-group">
                                     <div class="col-lg-9 col-lg-offset-3">
