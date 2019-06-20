@@ -90,10 +90,8 @@ strong, section, li, a, button, span{
   }
 }
 @media(max-width: 768px) {
-	.navbar-default ul {
-		background-color: white;
-	}
-	.navbar-default .navbar-nav>li>a {
+	
+.navbar-default .navbar-nav>li>a {
 		color:  #cfac67;
 	}
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -105,34 +103,21 @@ strong, section, li, a, button, span{
 	}
 }
 
+@media (max-width: 576px) {
+	#mainNav {
+		position: relative;
+	    background-color: #fff;
+	    margin-bottom: 0px;
+	}
+}
+
 
 //header section
-header {
-   // margin-top: -70px;
-}
-
-//.boxedcontainer		{	max-width: 1170px; margin:auto; padding:0px 30px;}
-/*********************************************
-    -	SETTINGS FOR BANNER CONTAINERS	-
-**********************************************/
-
-.tp-banner-container{
-    width:100%;
-    position:relative;
-    padding:0;
-    margin-top: 70px;
-
-}
-
-.tp-banner{
-    width:100%;
-    position:relative;
-}
-
-.tp-banner-fullscreen-container {
-        width:100%;
-        position:relative;
-        padding:0;
+.home-header {
+	img {
+		width: 100%;
+		max-height: 650px;
+	}
 }
 
 //end navbar --------------------------------------
@@ -367,6 +352,14 @@ footer {
 }
 
 // contact page contact section 
+.talk {
+	margin-bottom: 25px;
+	p {
+		font-size: 20px;
+	    max-width: 900px;
+	    margin: 0 auto;
+	}
+}
 .contact {
     textarea {
         height: 200px;

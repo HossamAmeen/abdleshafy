@@ -106,7 +106,7 @@ class HomeController extends Controller
     public function contact(Request $request)
     {
 
-        $title = "عبد الشافي - تواصل معانا";
+        $title =  "عبد الشافي -  جلسة سلام" ;
 
         if ($request->isMethod('post')) {
             //return $request->all();

@@ -4,9 +4,18 @@
        <header>
            <img src="{{asset('resources/assets/web/images/general.png')}}" class="img-responsive page-head">
         </header>
-        
-        <section class="contact padding-sec">
-            <div class="container">
+    <section class="contact padding-sec">
+        <div class="container">
+      <div class="row">
+				<div class="col-md-4">
+					<h2 class="head-sec text-center">جلسة سلام </h2>
+				    <span class="after-head"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+				</div>
+				<div class="col-md-8 talk">
+					<p class="text-center"> كل واحد فينا عنده مشاكله اللي بيمر بيها في مننا اللي عنده حد يحكيله ويخفف عنه وفي اللي معندوش والجزء الأهم في حل المشكلة هو مساعدة الناس لينا والنقاش مع صديق او شخص موثوق فيه عشان يقدملك الحلول، في جلسة سلام بنقدملك المشاورة عشان نسعدك في حل مشاكلك وتقديم اي مساعدة هتحتاجها سواء كانت كبيرة او صغيرة وزي ما قالنا رسولنا الحبيب " خير الناس انفعهم للناس" صدق رسول الله صل الله عليه وسلم </p>
+				</div>
+			</div>
+      <div class="row">  
           <h2 class="text-center" style="margin-bottom: 30px;">تواصل معنا </h2>
             <span class="after-head"><i class="fa fa-weixin" aria-hidden="true"></i></span>
           <form class="form-horizontal" action="{{url('contact')}}" method="post">
@@ -52,6 +61,7 @@
               </div>
             </div>
           </form>
+        </div>
         </div>
         </section>
 
