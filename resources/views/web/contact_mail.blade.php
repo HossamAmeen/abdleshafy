@@ -1,8 +1,10 @@
-name : {{$name}}<br>
-
-phone : {{$phone}}<br>
-address : {{$address}}<br>
-age : {{$age}}
+الاسم : {{$name}}<br>
+الهاتف : {{$phone}}<br>
+العنوان : {{$address}}<br>
+السن : {{$age}}
 <br>
+سبب الزيارة : 
 {{$text}}
+
+
 
