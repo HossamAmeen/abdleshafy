@@ -10,7 +10,7 @@
     Route::get('/blog/{id}', 'HomeController@show_blog');
     Route::get('/news/{id}', 'HomeController@show_news');
     Route::get('/video', 'HomeController@video');
-    Route::any('/contact', 'HomeController@contact');
+    Route::any('/salam', 'HomeController@contact');
 
 
 
