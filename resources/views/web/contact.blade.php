@@ -18,7 +18,7 @@
       <div class="row">  
           <h2 class="text-center" style="margin-bottom: 30px;">تواصل معنا </h2>
             <span class="after-head"><i class="fa fa-weixin" aria-hidden="true"></i></span>
-          <form class="form-horizontal" action="{{url('contact')}}" method="post">
+          <form class="form-horizontal" action="{{url('salam')}}" method="post">
              {{csrf_field()}}
               @if (session()->get('status') )
                   <div class="alert alert-success">
