@@ -144,12 +144,12 @@ class HomeController extends Controller
 
 
         return array(
-            'name' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
-            'phone' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
-            'address' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
+            'name' => 'required|regex:/^[\pL\s\d\-]+$/u|max:99',
+            'phone' => 'required|regex:/^[\pL\s\d\-]+$/u|max:99',
+            'address' => 'required|regex:/^[\pL\s\d\-]+$/u|max:99',
             'email' => 'required|email',
             'age' => 'required|regex:/^[\pL\s\d\-]+$/u|max:99',
-            'text' => 'regex:/^[\pL\s\-]+$/u||required|max:99',
+            'text' => 'required',
 
         );
     }
