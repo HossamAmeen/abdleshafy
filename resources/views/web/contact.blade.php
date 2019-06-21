@@ -12,7 +12,12 @@
 				    <span class="after-head"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
 				</div>
 				<div class="col-md-8 talk">
-					<p class="text-center"> كل واحد فينا عنده مشاكله اللي بيمر بيها في مننا اللي عنده حد يحكيله ويخفف عنه وفي اللي معندوش والجزء الأهم في حل المشكلة هو مساعدة الناس لينا والنقاش مع صديق او شخص موثوق فيه عشان يقدملك الحلول، في جلسة سلام بنقدملك المشاورة عشان نسعدك في حل مشاكلك وتقديم اي مساعدة هتحتاجها سواء كانت كبيرة او صغيرة وزي ما قالنا رسولنا الحبيب " خير الناس انفعهم للناس" صدق رسول الله صل الله عليه وسلم </p>
+					<p class="text-center">
+                        هيا بنا نجلس بسلام<br/>
+                        نبدأها بالسلام <br/>
+                        و نتبادل حديثنا في جو يعمه السلام<br/>
+                        و ختامها بسلام
+                    </p>
 				</div>
 			</div>
       <div class="row">  
@@ -67,10 +72,9 @@
               
             <div class="form-group">
                   <label class="control-label col-sm-2" for="msg">سبب المقابلة: </label>
-                  <div class="col-sm-10">          
-                    <textarea type="email" class="form-control" id="msg" placeholder="اكتب رسالتك ...."  name="text">
-                    {{old('text')}}
-                      </textarea>
+                  <div class="col-sm-10">
+                      <label>سيتم التحديد بناءا علي أهمية السبب بداية من مجرد التعارف الي طلب رأي في مشروعات حقيقة لذا يرجي التحديد</label>
+                    <textarea  class="form-control" id="msg" placeholder="" name="text">{{old('text')}}</textarea>
                     </div>
               </div>
               
