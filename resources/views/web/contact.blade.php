@@ -2,7 +2,7 @@
 
 @section('content')
        <header>
-           <img src="{{asset('resources/assets/web/images/general.png')}}" class="img-responsive page-head">
+           <img src="{{asset('resources/assets/web/images/2.png')}}" class="img-responsive page-head">
         </header>
     <section class="contact padding-sec">
         <div class="container">
@@ -41,6 +41,24 @@
               </div>
             </div>
             <div class="form-group">
+              <label class="control-label col-sm-2" >رقم التلفون: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="ادخل التلفون" name="phone">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">العنوان: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="ادخل العنوان" name="address">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">السن: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="ادخل السن" name="age">
+              </div>
+            </div>
+            <div class="form-group">
               <label class="control-label col-sm-2" for="pwd">الايميل: </label>
               <div class="col-sm-10">          
                 <input type="email" class="form-control" id="email" placeholder="ادخل الايميل " name="email">
@@ -48,7 +66,7 @@
             </div>
               
             <div class="form-group">
-                  <label class="control-label col-sm-2" for="msg">اترك رسالتك: </label>
+                  <label class="control-label col-sm-2" for="msg">سبب المقابله: </label>
                   <div class="col-sm-10">          
                     <textarea type="email" class="form-control" id="msg" placeholder="اكتب رسالتك ...." name="text">
                       </textarea>
@@ -57,7 +75,7 @@
               
             <div class="form-group text-center">        
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                <button type="submit" class="btn btn-default" id="submit">إرسال</button>
               </div>
             </div>
           </form>

@@ -27,7 +27,7 @@
                 </li>
                 <li><a  href="{{url('video')}}" @if($title ==  "عبد الشافي -  الفديوهات") class="page-scroll active" @else class="page-scroll"  @endif >الفيديوهات </a></li>
                 <li><a  href="{{url('news')}}" @if($title ==  "عبد الشافي -  الأخبار") class="page-scroll active" @else class="page-scroll"  @endif >الأخبار</a></li>
-                <li><a  href="{{url('contact')}}" @if($title ==  "عبد الشافي -  جلسة سلام") class="page-scroll active" @else class="page-scroll"  @endif>جلسة كلام </a></li>
+                <li><a  href="{{url('contact')}}" @if($title ==  "عبد الشافي -  جلسة سلام") class="page-scroll active" @else class="page-scroll"  @endif>جلسة سلام </a></li>
                 {{-- <li><a  href="{{url('contact')}}" @if($title == "عبد الشافي - تواصل معانا") class="page-scroll active" @else class="page-scroll"  @endif >تواصل معنا</a></li> --}}
             </ul>
         </div><!-- /.navbar-collapse -->

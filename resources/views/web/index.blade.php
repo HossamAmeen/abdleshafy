@@ -2,22 +2,10 @@
 
 @section('content')
 
-        <header>
-           <!--        header-->
-      
-            <!--
-            #################################
-                - THEMEPUNCH BANNER -
-            #################################
-            -->
-            <div class="banner1">
-
-                   <img src="{{asset('resources/assets/web/images/index.jpg')}}"  >
-                     
- 
-            </div>
-        </header> 
-      
+        <header class="home-header">
+	    		<img src="{{asset('resources/assets/web/images/header.png')}}" class="img-responsive" alt="background-img">
+	    </header>
+       
 
         <section class="about padding-sec">
             <div class="container">

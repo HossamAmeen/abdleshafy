@@ -116,8 +116,9 @@ class HomeController extends Controller
             $data=[
                 'email' =>  $request->email,
                 'name' => $request->name,
-
-
+                'phone' => $request->phone,
+                'address' => $request->address,
+                'age' => $request->age,
                 'text'=>$request->text,
             ];
             Mail::send('web.contact_mail',$data,function($message) use ($data){
@@ -144,9 +145,10 @@ class HomeController extends Controller
 
         return array(
             'name' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
-
+            'phone' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
+            'address' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
             'email' => 'required|email',
-
+            'age' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
             'text' => 'regex:/^[\pL\s\-]+$/u||required|max:99',
 
         );
@@ -157,6 +159,13 @@ class HomeController extends Controller
         return array(
             'name.required' => 'هذا الحقل (الاسم) مطلوب ',
             'name.*' => 'هذا الحقل (الاسم) يجب يحتوي ع حروف وارقام فقط',
+
+            'phone.required' => 'هذا الحقل (الموبيل) مطلوب ',
+
+            'address.required' => 'هذا الحقل (العنوان) مطلوب ',
+
+            'age.required' => 'هذا الحقل (السن) مطلوب ',
+
 
             'text.required' => 'هذا الحقل (الرساله) مطلوب ',
             'text.*' => 'هذا الحقل (الرساله) يجب يحتوي ع حروف وارقام فقط',
