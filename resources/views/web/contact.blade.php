@@ -66,7 +66,7 @@
             </div>
               
             <div class="form-group">
-                  <label class="control-label col-sm-2" for="msg">سبب المقابله: </label>
+                  <label class="control-label col-sm-2" for="msg">سبب المقابلة: </label>
                   <div class="col-sm-10">          
                     <textarea type="email" class="form-control" id="msg" placeholder="اكتب رسالتك ...." name="text">
                       </textarea>
