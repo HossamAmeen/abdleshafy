@@ -37,38 +37,39 @@
               <div class="form-group">
               <label class="control-label col-sm-2" for="email">الاسم: </label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" placeholder="ادخل الاسم" name="name">
+                <input type="text" class="form-control" id="name" placeholder="ادخل الاسم" value="{{old('name')}}" name="name">
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-sm-2" >رقم التلفون: </label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" placeholder="ادخل التلفون" name="phone">
+                <input type="text" class="form-control" id="name" placeholder="ادخل التلفون" value="{{old('phone')}}" name="phone">
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-sm-2" for="email">العنوان: </label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" placeholder="ادخل العنوان" name="address">
+                <input type="text" class="form-control" id="name" placeholder="ادخل العنوان" value="{{old('address')}}" name="address">
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-sm-2" for="email">السن: </label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" placeholder="ادخل السن" name="age">
+                <input type="text" class="form-control" id="name" placeholder="ادخل السن" value="{{old('age')}}" name="age">
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-sm-2" for="pwd">الايميل: </label>
               <div class="col-sm-10">          
-                <input type="email" class="form-control" id="email" placeholder="ادخل الايميل " name="email">
+                <input type="email" class="form-control" id="email" placeholder="ادخل الايميل " value="{{old('email')}}" name="email">
               </div>
             </div>
               
             <div class="form-group">
                   <label class="control-label col-sm-2" for="msg">سبب المقابلة: </label>
                   <div class="col-sm-10">          
-                    <textarea type="email" class="form-control" id="msg" placeholder="اكتب رسالتك ...." name="text">
+                    <textarea type="email" class="form-control" id="msg" placeholder="اكتب رسالتك ...."  name="text">
+                    {{old('text')}}
                       </textarea>
                     </div>
               </div>

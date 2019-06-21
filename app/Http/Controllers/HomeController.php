@@ -124,7 +124,7 @@ class HomeController extends Controller
             Mail::send('web.contact_mail',$data,function($message) use ($data){
 
                 $message->from( $data['email'] , $data['name']);
-                $message->to("hosamameen948@gmail.com");
+                $message->to("");
                 $message->subject('contact');
             });
             $request->session()->flash('status', 'تم الارسال بنجاح!');
@@ -148,7 +148,7 @@ class HomeController extends Controller
             'phone' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
             'address' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
             'email' => 'required|email',
-            'age' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
+            'age' => 'required|regex:/^[\pL\s\d\-]+$/u|max:99',
             'text' => 'regex:/^[\pL\s\-]+$/u||required|max:99',
 
         );
