@@ -149,7 +149,7 @@ class HomeController extends Controller
             'address' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
             'email' => 'required|email',
             'age' => 'regex:/^[\pL\s\d\-]+$/u||required|max:99',
-            'text' => 'regex:/^[\pL\s\-]+$/u||required|max:99',
+            'text' => 'required',
 
         );
     }
