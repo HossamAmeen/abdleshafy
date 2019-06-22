@@ -125,7 +125,7 @@ class HomeController extends Controller
             Mail::send('web.contact_mail',$data,function($message) use ($data){
 
                 $message->from( $data['email'] , $data['name']);
-              //  $message->to("salam@mahmoud-abdelshafy.com");
+            //    $message->to("salam@mahmoud-abdelshafy.com");
               $message->to("hosamameen948@gmail.com");
                 $message->subject('contact');
             });
