@@ -116,6 +116,7 @@ class HomeController extends Controller
             $data=[
                 'email' =>  $request->email,
                 'name' => $request->name,
+                'place' => $request->plcae,
                 'phone' => $request->phone,
                 'address' => $request->address,
                 'age' => $request->age,

@@ -64,7 +64,17 @@
                 <input type="email" class="form-control" id="email" placeholder="ادخل الايميل " value="{{old('email')}}" name="email">
               </div>
             </div>
-              
+             <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd"> مكان المقابلة: </label>
+              <div class="col-sm-10">          
+                <select class="form-control">
+                  <option value="القاهرة - مصر ">القاهرة - مصر </option>
+                  <option value="ابو ظبي - الإمارات العربية المتحدة">ابو ظبي - الإمارات العربية المتحدة</option>
+                 
+                </select> 
+              </div>
+            </div>
+             
             <div class="form-group">
                   <label class="control-label col-sm-2" for="msg">سبب المقابلة: </label>
                   <div class="col-sm-10">          
