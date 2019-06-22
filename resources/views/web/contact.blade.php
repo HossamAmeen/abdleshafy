@@ -72,7 +72,7 @@
              <div class="form-group">
               <label class="control-label col-sm-2" for="pwd"> مكان المقابلة: </label>
               <div class="col-sm-10">          
-                <select class="form-control">
+                <select class="form-control" name="plcae">
                   <option value="القاهرة - مصر ">القاهرة - مصر </option>
                   <option value="ابو ظبي - الإمارات العربية المتحدة">ابو ظبي - الإمارات العربية المتحدة</option>
                  
