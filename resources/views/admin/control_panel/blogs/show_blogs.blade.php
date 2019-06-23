@@ -53,7 +53,8 @@
 
                                                        aria-pressed="true">{{$blog->ar_title}} </a>
                                                 </td>
-                                                <td><?php echo substr($blog->description , 0 , 180)  ?></td>
+                                               
+                                                <td>{!! substr($blog->description , 0 , 180) !!}</td>
                                                 <td>{{$blog->owner}}</td>
                                                 @if($blog->user != null)
                                                 <td>{{$blog->user->name}}</td>
