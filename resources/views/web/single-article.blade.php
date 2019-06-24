@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h3 class="popular-head"> الاكتر مشاهده </h3>
+                        <h3 class="popular-head"> الأكثر مشاهدة </h3>
                         @foreach($blogsMostWatcheds as $blogsMostWatched )
                             <div class="row popular">
                                 <div class="col-md-12">
@@ -35,14 +35,14 @@
 				 	<h1 class="head">{{$blog->ar_title}}</h1>
 					
 					<div class="content-body">
-						<img src="{{asset($blog->img)}}" alt="" class="img-responsive">
+						<img src="{{asset($blog->img)}}" alt="{{$blog->ar_title}}" class="img-responsive">
 						<div class="info">
 							<span class="pull-right date"><i class="fa fa-calendar"></i> {{$blog->date}}</span>
 							<span class="pull-left watch"><i class="fa fa-users"></i> عد د المشاهدات:{{$blog->user_count}}</span>
 						</div>
                         <br/>
 						<div class="body">
-							{{$blog->description}}
+							{!!  $blog->description !!}
 						</div>
 					</div>
 				 </div>

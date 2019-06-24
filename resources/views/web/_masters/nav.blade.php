@@ -17,6 +17,9 @@
             <ul class="nav navbar-nav navbar-left">
                 <li><a  href="{{url('/')}}"   @if($title ==  "عبد الشافي - الصفحه الرئيسيه") class="page-scroll active" @else class="page-scroll"  @endif >الرئيسية</a></li>
                 <li><a  href="{{url('/blog')}}" @if($title ==  "عبد الشافي - المقالات") class="page-scroll active" @else class="page-scroll"  @endif  >المقالات </a></li>
+                <li><a  href="{{url('news')}}" @if($title ==  "عبد الشافي -  الأخبار") class="page-scroll active" @else class="page-scroll"  @endif >الأخبار</a></li>
+                <li><a  href="{{url('video')}}" @if($title ==  "عبد الشافي -  الفديوهات") class="page-scroll active" @else class="page-scroll"  @endif >الفيديوهات </a></li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المشروعات  <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -25,8 +28,6 @@
                         @endforeach
                     </ul>
                 </li>
-                <li><a  href="{{url('video')}}" @if($title ==  "عبد الشافي -  الفديوهات") class="page-scroll active" @else class="page-scroll"  @endif >الفيديوهات </a></li>
-                <li><a  href="{{url('news')}}" @if($title ==  "عبد الشافي -  الأخبار") class="page-scroll active" @else class="page-scroll"  @endif >الأخبار</a></li>
                 <li><a  href="{{url('salam')}}" @if($title ==  "عبد الشافي -  جلسة سلام") class="page-scroll active" @else class="page-scroll"  @endif>جلسة سلام </a></li>
                 {{-- <li><a  href="{{url('contact')}}" @if($title == "عبد الشافي - تواصل معانا") class="page-scroll active" @else class="page-scroll"  @endif >تواصل معنا</a></li> --}}
             </ul>

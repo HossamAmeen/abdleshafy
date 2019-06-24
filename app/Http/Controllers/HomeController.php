@@ -39,7 +39,7 @@ class HomeController extends Controller
 
     public function ar_blog()
     {
-        $data['blogs'] = Blog::orderBy('id', 'desc')->paginate(4);
+        $data['blogs'] = Blog::orderBy('id', 'desc')->paginate(6);
 
 
         $data['blogsMostWatcheds'] =   DB::table('blogs')
@@ -77,7 +77,7 @@ class HomeController extends Controller
             ->limit(4)
             ->get();
           
-        $data['newss'] =    News::orderBy('id', 'desc')->where('id','!=',$data['firstNews']->id)->paginate(4); //  DB::table('news')->orderBy('id', 'desc')->paginate(4); // News::paginate(4);
+        $data['newss'] =    News::orderBy('id', 'desc')->where('id','!=',$data['firstNews']->id)->paginate(6); //  DB::table('news')->orderBy('id', 'desc')->paginate(4); // News::paginate(4);
         $data['title'] = "عبد الشافي -  الأخبار";
         return view('web.news',$data);
     }
@@ -91,7 +91,7 @@ class HomeController extends Controller
             ->get();
         $news->user_count += 1 ;
         $news->save();
-        $title = "عبد الشافي - عرض الخبر - " . $news->ar_title;
+        $title =  $news->ar_title;
         return view('web.single-news', compact('title' , 'news' , 'newsMostWatcheds'));
 
     }
@@ -99,7 +99,7 @@ class HomeController extends Controller
     public function video()
     {
         $data['videos'] = Video::orderBy('id', 'desc')->get();
-        $data['title'] = "عبد الشافي -  الفديوهات";
+        $data['title'] = "الفيديوهات ";
         return view('web.videos',$data);
     }
 

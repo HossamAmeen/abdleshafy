@@ -12,7 +12,7 @@ class BlogController extends Controller
    
     public function index()
     {
-        $data['blogs'] = Blog::all();
+        $data['blogs'] = Blog::all()->sortByDesc("id");
         $data['title'] = 'عرض المقالات';
         return view('admin.control_panel.blogs.show_blogs',$data);
     }
@@ -36,7 +36,7 @@ class BlogController extends Controller
                 $photo = $request->file('img');
                 $imagename = time().'.'.$photo->getClientOriginalExtension();
                 $destinationPath = 'resources/assets/admin/images/';
-                $thumb_img = Image::make($photo->getRealPath())->resize(400, 400);
+                $thumb_img = Image::make($photo->getRealPath())->resize(800, 600);
                 $thumb_img->save($destinationPath.$imagename,60);
                 $blog->img = $destinationPath . $imagename;
             }
@@ -82,7 +82,7 @@ class BlogController extends Controller
                $photo = $request->file('img');
                $imagename =   time().'.'.$photo->getClientOriginalExtension();
                $destinationPath = 'resources/assets/admin/images/';
-               $thumb_img = Image::make($photo->getRealPath())->resize(400, 400);
+               $thumb_img = Image::make($photo->getRealPath())->resize(800, 600);
                $thumb_img->save($destinationPath.$imagename);
                $blog->img = $destinationPath . $imagename;
                $hasFile=true;
