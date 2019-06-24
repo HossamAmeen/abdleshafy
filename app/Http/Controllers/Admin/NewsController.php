@@ -34,7 +34,7 @@ class NewsController extends Controller
                 $photo = $request->file('img');
                 $imagename = time().'.'.$photo->getClientOriginalExtension();
                 $destinationPath = 'resources/assets/admin/images/';
-                $thumb_img = Image::make($photo->getRealPath())->resize(400, 400);
+                $thumb_img = Image::make($photo->getRealPath())->resize(800, 600);
                 $thumb_img->save($destinationPath.$imagename,60);
                 $news->img = $destinationPath . $imagename;
             }
@@ -73,7 +73,7 @@ class NewsController extends Controller
                $photo = $request->file('img');
                $imagename =   time().'.'.$photo->getClientOriginalExtension();
                $destinationPath = 'resources/assets/admin/images/';
-               $thumb_img = Image::make($photo->getRealPath())->resize(400, 400);
+               $thumb_img = Image::make($photo->getRealPath())->resize(800, 600);
                $thumb_img->save($destinationPath.$imagename);
                $news->img = $destinationPath . $imagename;
                $hasFile=true;
