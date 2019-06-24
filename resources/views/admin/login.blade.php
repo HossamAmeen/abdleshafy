@@ -70,15 +70,15 @@
                             <i class="glyphicon glyphicon-user"></i>
 
                         </div>
-                        <h3>Identify Yourself</h3>
+                        <h3>mahmoud-abdelshafy.com</h3>
                         <div class="social-btn-login">
                             <ul>
-                                <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="fa fa-github"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="fa fa-bitbucket"></i></a></li>
+                                {{--<li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>--}}
+                                {{--<li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>--}}
+                                {{--<li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>--}}
+                                {{--<li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>--}}
+                                {{--<li><a href="javascript:void(0)"><i class="fa fa-github"></i></a></li>--}}
+                                {{--<li><a href="javascript:void(0)"><i class="fa fa-bitbucket"></i></a></li>--}}
                             </ul>
                             <!--<button class="btn ls-dark-btn rounded"><i class="fa fa-facebook"></i></button>
                             <button class="btn ls-dark-btn rounded"><i class="fa fa-twitter"></i></button>
@@ -121,7 +121,7 @@
                                     <span class="ladda-label"><i class="fa fa-key"></i></span>
                                 </button>
 
-                                <a class="forgot-password" href="javascript:void(0)">Forgot password</a>
+                                {{--<a class="forgot-password" href="javascript:void(0)">Forgot password</a>--}}
                             </div>
                         </form>
                     </div>
@@ -148,7 +148,7 @@
         </div>
     </div>
     <p class="copy-right big-screen hidden-xs hidden-sm">
-        <span>&#169;</span> Fickle <span class="footer-year">2014</span>
+        <span>&#169;</span> Zedy <span class="footer-year">2019</span>
     </p>
 </section>
 

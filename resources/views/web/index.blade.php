@@ -138,7 +138,7 @@
 
 
                                 <h3 class="title"><a href="{{url('blog/'.$blog->id)}}">{{$blog->ar_title}}</a></h3>
-                                <p class="abbrav">  <?php echo substr( $blog->description , 0 , 240 ) ?>  </p>
+                                <p class="abbrav">  <?php echo strip_tags(substr( $blog->description , 0 , 240 )) ?>  </p>
                             </div>
                         </div>
                     </div>
