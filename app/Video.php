@@ -11,7 +11,7 @@ class Video extends Model
         return $this->belongsTo('App\User');
     }
     protected $fillable = [
-        'link' 
+        'link' , 'title'
     ];
     protected $dates = ['deleted_at'];
 }

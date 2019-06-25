@@ -73,8 +73,8 @@ $factory->define(App\Video::class, function (Faker $faker) {
     $users = App\User::pluck('id')->toArray();
 
     return [
-   
-    'link'=>'https://www.youtube.com/watch?v=zqFg6f-9UJE',
+        'title'=>'مبادرة اسكان الشباب' ,
+    'link'=>'LcXjgUkRyiY',
     
     
         'user_id'=>$faker->randomElement($users),

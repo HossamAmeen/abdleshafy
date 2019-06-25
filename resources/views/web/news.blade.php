@@ -41,7 +41,7 @@
                              <div class="col-md-6">
                                  <div class="content">
                            <h2> <a href="{{ url('news/'.$firstNews->id) }}">{{$firstNews->ar_title}}</a></h2>
-                                     <p class="desc">{{$firstNews->description}}</p>
+                                     <p class="desc">{{ strip_tags(substr($firstNews->description , 0 , 340 ) ) }}</p>
                                  </div>
                              </div>
                          </div>

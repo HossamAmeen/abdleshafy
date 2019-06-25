@@ -28,9 +28,9 @@ class VideoController extends Controller
         $this->validate($request, $rules,$message);
 
         $video = Video::create($request->all());
-        $video->img =  substr( $request->link , strpos( $request->link , "v=" )  + 2    )  ;
+        $video->link =  substr( $request->link , strpos( $request->link , "v=" )  + 2    )  ;
 
-       // return  substr( $request->link , strpos( $request->link , "v=" )  + 1    ) ;
+       
         $video->save();
 
         $request->session()->flash('status', 'تم الاضافه بنجاح');

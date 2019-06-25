@@ -1,6 +1,11 @@
-html,
+html {
+	overflow-x: hidden;
+	max-width: 100%;
+}
 body {
-  width: 100%;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
 }
 p, h1,h2, h3, h4, h5, h6,div , span,
 strong, section, li, a, button, span{
@@ -108,7 +113,7 @@ strong, section, li, a, button, span{
 		position: relative;
 	    background-color: #fff;
 	    margin-bottom: 0px;
-	}
+}
 }
 
 

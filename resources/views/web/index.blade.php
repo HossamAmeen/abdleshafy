@@ -138,7 +138,7 @@
 
 
                                 <h3 class="title"><a href="{{url('blog/'.$blog->id)}}">{{$blog->ar_title}}</a></h3>
-                                <p class="abbrav">  <?php echo strip_tags(substr( $blog->description , 0 , 240 )) ?>  </p>
+                                <p class="abbrav"> {{ strip_tags(substr( $blog->description , 0 , 240 )) }} </p>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                             <a href="{{url('news/'.$news->id)}}"><img src="{{$news->img}}" class="img-responsive" alt="article"></a>
                             <div class="content">
                                 <h3 class="title"><a href="{{url('news/'.$news->id)}}">{{$news->ar_title}} </a></h3>
-                                <p class="abbrav">  <?php echo substr( $news->description , 0 , 240 ) ?>  </p>
+                                <p class="abbrav">  {{ strip_tags(substr( $news->description , 0 , 240 ) ) }}  </p>
                             </div>
                         </div>
                     </div>

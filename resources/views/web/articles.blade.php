@@ -45,7 +45,7 @@
                                             <span class="author">{{$blog->owner}}</span>
                                             <span class="date">{{$blog->date}}</span>
                                         </div>
-                                        <p><?php echo strip_tags(substr($blog->description , 0 , 100)) ?></p>
+                                        <p>{{ strip_tags(substr($blog->description , 0 , 100)) )}}</p>
                                     </div>
                                 </div> {{--End Article Div--}}
                             </div>{{--End Article div--}}

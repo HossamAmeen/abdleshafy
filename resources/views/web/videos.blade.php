@@ -5,63 +5,33 @@
            <img src="{{asset('resources/assets/web/images/general.png')}}" class="img-responsive page-head">
         </header>
         
-        
-        <section class="videos-page padding-sec">
+        <section class="videos-page">
             <div class="container">    
-                 <div class="row">
+                <div class="row">
                  @foreach($videos as $video)
-               
-                    <div class="col-md-3">
+                    <div class="col-md-4 col-sm-6">
                         <div class="item">
                             <div class="img-sec">
-                                <img src="http://img.youtube.com/vi/{{$video->img}}/mqdefault.jpg" class="img-responsive" alt="video-img">
-                                <div class="icons">
-                                    <a href="#" onclick="changeVideo('{{$video->img}}')" 
-                                    video-url="https://www.youtube.com/watch?v=e80BbX05D7Y" class="video">
-                                    <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
-                                         <span class="play">تشغيل</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-           
-
-           
-                 @endforeach
-                 </div>
-                {{-- <div class="row">
-                    @foreach($videos as $video)
-                    <div class="col-md-3">
-                        <div class="item">
-                            <div class="img-sec">
-
-                                <img src="http://img.youtube.com/vi/{{$video->img}}/mqdefault.jpg" class="img-responsive" alt="video-img">
-                                <div class="icons">
-                                    <a video-url="{{$video->link}}" class="video"><span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
-                                        <span class="play">play</span></a>
-                                </div>
+                            <iframe width="100%" src="https://www.youtube.com/embed/{{$video->link}}"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="content">
-                                <p class="title">{{$video->description}} </p>
+                                <h3 class="text-center">{{$video->title}}</h3>
                             </div>
                         </div>
                     </div>
-                    @endforeach
-
-                </div> --}}
-
+                @endforeach
+                </div>
                 <div class="row">
                     <div class="channel text-center">
-                    @if($data['pref']->youtube != null)
-                        <a href= " {{$data['pref']->youtube}}" target="_blank" class="btn">
+                        <a href="#" target="_blank" class="btn">
                             <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i> </span>
                             <span class="content">قناتنا على اليوتيوب</span>
                         </a>
-                        @endif
                     </div>
                 </div>
             </div>
         </section>
+       
 
 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

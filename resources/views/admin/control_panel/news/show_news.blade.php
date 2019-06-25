@@ -52,7 +52,7 @@
 
                                                        aria-pressed="true"><?php echo substr($news->ar_title , 0 , 100 ) ?> </a>
                                                 </td>
-                                                <td><?php echo strip_tags(substr($news->description , 0 , 150))  ?></td>
+                                                <td>{{ strip_tags(substr($news->description , 0 , 150))  }}</td>
                                                 @if($news->user != null)
                                                 <td>{{$news->user->name}}</td>
                                             @else

@@ -30,7 +30,17 @@
                                         </ul>
                                     </div>
                                 @endif
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">عنوان الفديو</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="title"
+                                               data-bv-message="The service is not valid"
+                                               required data-bv-notempty-message="The service is required and cannot be empty"
+                                               value="{{ old('title')}}"
 
+                                        />
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <label class="col-lg-3 control-label">لينك الفديو</label>
                                     <div class="col-lg-6">
