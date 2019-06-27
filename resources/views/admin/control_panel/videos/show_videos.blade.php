@@ -34,6 +34,7 @@
                                         <thead>
                                         <tr>
                                             <th>#</th>
+                                            <th>عنوان الفديو</th>
                                             <th>رابط الفديو</th>
                                             <th>المستخدم</th>
                                             <th>الخيارات</th>
@@ -46,6 +47,7 @@
                                         @foreach ($videos as $video)
                                             <tr>
                                                 <td>{{$i++}}</td>
+                                                <td>{{$video->title}}</td>
                                                 <td>
                                                     <a href="{{url('/admin/video/'.$video->id.'/edit')}}"
 

@@ -42,7 +42,23 @@
 <!--        our revolution slider-->
 <script src="{{asset('resources/assets/web/js/jquery.themepunch.tools.min.js')}}"></script>
 
-
+      <script> 
+            $("#video1, #video2, #video3, #video4").videoPopup({
+                  autoplay: true,
+                  showControls: true,
+                  controlsColor: null,
+                  loopVideo: false,
+                  showVideoInformations: true,
+                  width: null
+                });
+        </script>
+        
+<!--	    wow js animation -->
+	      <script src="{{asset('resources/assets/web/js/wow.min.js')}}"></script>
+              <script>
+			    wow = new WOW({mobile: false});
+				wow.init();
+              </script>
 <script src="{{asset('resources/assets/web/js/video.popup.js')}}"></script>
 <script>
     $("#video1, #video2, #video3, #video4").videoPopup();

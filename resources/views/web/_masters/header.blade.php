@@ -13,9 +13,14 @@
 <link rel="stylesheet" href="{{asset('resources/assets/web/css/bootstrap-rtl.css')}}">
 <link rel="stylesheet" href="{{asset('resources/assets/web/css/font-awesome.min.css')}}">
 
-<!--        our revolution slider-->
-<link rel="stylesheet" href="{{asset('resources/assets/web/css/settings.css')}}">
-<link rel="stylesheet" href="{{asset('resources/assets/web/css/extralayers.css')}}">
+
+<!--	    animated.css-->
+	    <link rel="stylesheet" href="{{asset('resources/assets/web/css/animate.css')}}">
+	    
+<!--        owl slider-->
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('resources/assets/web/css/owl.theme.default.min.css')}}">
+
 
 <!--        our video popup-->
 <link rel="stylesheet" href="{{asset('resources/assets/web/css/video.popup.css')}}">

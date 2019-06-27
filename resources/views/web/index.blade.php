@@ -15,9 +15,10 @@
                     </div>
                     <div class="col-md-8">
                         <div class="desc">
-                           <p>
+                           <p class="wow bounceInUp" data-wow-duration="1s">
                                محمود عبدالشافي، مطور عقاري ومقدم برامج، يُعد واحد من أشهر المطوريين العقاريين في مصر وصاحب مبادرة بيتك بإيدك حيث حققت نجاح كبير في مجال العقارات، تخرج من كلية حقوق عام 2008 وعمل بالمحاماة ثم قرر ان يكون لديه مشورعه الخاص وسعى كثيراً لان يكون له بصمة في مجال ريادة الأعمال.
-                               "من رحم المعاناة يولد النجاح، ومن وجع الألم يولد الأمل، ومن باطن الغيوم السوداء ينشق النور" هي مقولة طبقها محمود عبدالشافي عندما أراد ان يكون له شقة وواجه العديد من العقبات وجاءت له فكرة شقتك بسعر التكلفة من خلال معاناتة لذلك يرى محمود ان من حق كل مواطن أن يكون لديه عقار "بسعر التكلفة" و وأن هذا العقار قد يصبح مشروعاً يعود عليه بالنفع، وأن استغلال السماسرة وتجار العقارات هو أحد الأسباب الرئيسية فى تضاعف أسعار العقارات.
+                               "من رحم المعاناة يولد النجاح، ومن وجع الألم يولد الأمل، ومن باطن الغيوم السوداء ينشق النور" هي مقولة
+                                طبقها محمود عبدالشافي عندما أراد ان يكون له شقة وواجه العديد من العقبات وجاءت له فكرة شقتك بسعر التكلفة من خلال معاناتة لذلك يرى محمود ان من حق كل مواطن أن يكون لديه عقار "بسعر التكلفة" و وأن هذا العقار قد يصبح مشروعاً يعود عليه بالنفع، وأن استغلال السماسرة وتجار العقارات هو أحد الأسباب الرئيسية فى تضاعف أسعار العقارات.
                                وعمل كمقدم برامج في برنامج أصول اللعبة لتوعية الناس حول سوق العقارات من حيث العوائد المادية والأضرار المحتملة والأخطاء الشائعة لتجنب عمليات السماسرة والنصب.
 
                             </p>
@@ -27,7 +28,88 @@
             </div>
         </section>
         
-        
+        <!--        our projects -->
+        <section class="projects">
+            <div class="container">
+                <h2 class="head-sec text-center">مشروعاتنا</h2>
+                 <span class="after-head"><i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
+                                    <div class="img-sec wow bounceInRight" data-wow-duration="2s">
+                                        <img src="images/project2.png" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
+                                    <div class="content text-center wow bounceInLeft" data-wow-duration="1s">
+                                        <h2>بيتك بايدك </h2>
+                                        <p>يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء</p>
+                                        <div class="icons">
+                                            <a id="video1"  video-url="https://www.youtube.com/watch?v=eW5mEFCiKtA" class="pull-right">
+                                                <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                                                <span class="icon-work">فيديو </span>  
+                                            </a>
+                                            <a href="#" class="pull-left">
+                                                <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                                                <span class="icon-work">الموقع </span>  
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <div class="row">
+                               <div class="col-sm-6 col-sm-push-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
+                                    <div class="img-sec wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.25s">
+                                        <img src="images/project3.png" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-sm-pull-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
+                                    <div class="content text-center wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.25s">
+                                        <h2>جولدن </h2>
+                                        <p>يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء</p>
+                                        <div class="icons">
+                                            <a id="video2"  video-url="https://www.youtube.com/watch?v=eW5mEFCiKtA" class="pull-right">
+                                                <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                                                <span class="icon-work">فيديو </span>  
+                                            </a>
+                                            <a href="#" class="pull-left">
+                                                <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                                                <span class="icon-work">الموقع </span>  
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-offset-2 col-xs-8 col-xs-pull-">
+                                    <div class="img-sec  wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img src="images/project1.PNG" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
+                                    <div class="content text-center wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <h2> قمره </h2>
+                                        <p>يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء</p>
+                                        <div class="icons">
+                                            <a id="video3"  video-url="https://www.youtube.com/watch?v=eW5mEFCiKtA" class="pull-right">
+                                                <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                                                <span class="icon-work">فيديو </span>  
+                                            </a>
+                                            <a href="#" class="pull-left">
+                                                <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                                                <span class="icon-work">الموقع </span>  
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 <!--        our projects -->
         <section class="projects">
             <div class="container">
