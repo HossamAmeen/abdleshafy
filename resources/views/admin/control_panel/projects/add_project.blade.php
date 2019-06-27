@@ -96,6 +96,7 @@
                                                 <button type="submit" class="btn btn-primary">إضافه</button>
                                             </div>
                                         </div>
+                                        <label class="col-md-4 control-label" > ملحوظه :يفضل أبعاد الصوره 170*300   </label>
                                     </form>
 
                                 </div>

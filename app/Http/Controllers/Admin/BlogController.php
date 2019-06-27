@@ -36,7 +36,7 @@ class BlogController extends Controller
                 $photo = $request->file('img');
                 $imagename = time().'.'.$photo->getClientOriginalExtension();
                 $destinationPath = 'resources/assets/admin/images/';
-                $thumb_img = Image::make($photo->getRealPath())->resize(800, 600);
+                $thumb_img = Image::make($photo->getRealPath())->resize(360, 270);
                 $thumb_img->save($destinationPath.$imagename,60);
                 $blog->img = $destinationPath . $imagename;
             }

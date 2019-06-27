@@ -36,7 +36,7 @@ class ProjectController extends Controller
             $photo = $request->file('img');
             $imagename = time().'.'.$photo->getClientOriginalExtension();
             $destinationPath = 'resources/assets/admin/images/';
-            $thumb_img = Image::make($photo->getRealPath())->resize(400, 400);
+            $thumb_img = Image::make($photo->getRealPath())->resize(300, 170);
             $thumb_img->save($destinationPath.$imagename,60);
             $project->img = $destinationPath . $imagename;
         }

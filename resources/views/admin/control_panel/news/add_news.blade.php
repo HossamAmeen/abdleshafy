@@ -66,7 +66,7 @@
 
                                         <div class="row ls_divider last">
                                             <div class="form-group">
-                                                <label class="col-md-2 control-label">إضافة صورة : يفضل أبعاد  800 * 600 </label>
+                                                
 
                                                 <div class="col-md-10 ls-group-input">
                                                     <input id="file-3" type="file" multiple="true" name="img">
@@ -79,6 +79,7 @@
                                                 <button type="submit" class="btn btn-primary">إضافه</button>
                                             </div>
                                         </div>
+                                        <label class="col-md-4 control-label" > ملحوظه :يفضل أبعاد الصوره  270*300   </label>
                                     </form>
 
                                 </div>
