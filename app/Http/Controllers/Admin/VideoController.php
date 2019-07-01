@@ -43,11 +43,11 @@ class VideoController extends Controller
     public function edit($id)
     {
 
-        $video = Video::find($id);
+        $data['video'] = Video::find($id);
         $title = 'تعديل الفديو';
 
-        if(!empty($video))
-            return view('admin.control_panel.videos.edit_video',$video)->with(compact('video', 'title') );
+        if(!empty($data['video']))
+            return view('admin.control_panel.videos.edit_video',$data)->with(compact('title') );
         else
             return redirect()->route('video.index');
     }

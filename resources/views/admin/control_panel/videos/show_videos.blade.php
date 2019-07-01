@@ -47,11 +47,13 @@
                                         @foreach ($videos as $video)
                                             <tr>
                                                 <td>{{$i++}}</td>
-                                                <td>{{$video->title}}</td>
+                                                <td> <a href="{{url('/admin/video/'.$video->id.'/edit')}}" aria-pressed="true">
+                                                
+                                                {{$video->title}} </a> </td>
                                                 <td>
-                                                    <a href="{{url('/admin/video/'.$video->id.'/edit')}}"
-
-                                                       aria-pressed="true"><?php echo substr( $video->link , 0 , 200 )?> </a>
+                                            
+                                                https://www.youtube.com/watch?v={{$video->link}} 
+                                              
                                                 </td>
 
 

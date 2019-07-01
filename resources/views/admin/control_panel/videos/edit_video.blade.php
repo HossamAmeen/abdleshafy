@@ -13,7 +13,7 @@
                             <h3 class="panel-title">تعديل قسم</h3>
                         </div>
                         <div class="panel-body">
-                        <form id="defaultForm" method="post" class="form-horizontal ls_form" action="{{url('admin/video/'.$id)}}"
+                        <form id="defaultForm" method="post" class="form-horizontal ls_form" action="{{url('admin/video/'.$video->id)}}"
                                 data-bv-message="This value is not valid"
                                 data-bv-feedbackicons-valid="fa fa-check"
                                 data-bv-feedbackicons-invalid="fa fa-bug"
@@ -31,27 +31,31 @@
                                         </ul>
                                     </div>
                                 @endif
+                            <div class="form-group">
+                                    <label class="col-lg-3 control-label">عنوان الفديو</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="title"
+                                               data-bv-message="The service is not valid"
+                                               required data-bv-notempty-message="The service is required and cannot be empty"
+                                               value="{{ $video->title}}"
 
+                                        />
+                                    </div>
+                                </div>
                             <div class="form-group">
                                 <label class="col-lg-3 control-label">لينك الفديو</label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" name="link"
                                            data-bv-message="The service is not valid"
                                            required data-bv-notempty-message="The service is required and cannot be empty"
-                                           value="{{ $link}}"
+                                           value="{{ $video->link}}"
 
                                     />
                                 </div>
                             </div>
                            
 
-                            <div class="form-group">
-                                <label class="col-lg-3 control-label">الصورة</label>
-
-                                <div class="goal-user-image">
-                                    <img class="rounded" src="http://img.youtube.com/vi/{{$img}}/mqdefault.jpg" alt="user image" height="15%" width="15%" />
-                                </div>
-                            </div>
+                         
                                                                 
                                 <div class="form-group">
                                     <div class="col-lg-9 col-lg-offset-3">

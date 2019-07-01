@@ -23,7 +23,7 @@
                 </div>
                 <div class="row">
                     <div class="channel text-center">
-                        <a href="#" target="_blank" class="btn">
+                        <a href="{{$data['pref']->youtube}}" target="_blank" class="btn">
                             <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i> </span>
                             <span class="content">قناتنا على اليوتيوب</span>
                         </a>
